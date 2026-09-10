@@ -1,0 +1,3725 @@
+{
+  "generated_at": "2026-09-04T20:04:27.459877",
+  "tariff_assumptions": {
+    "base_rate_rial_per_kwh": 14420.0,
+    "off_peak_multiplier": 0.5,
+    "mid_peak_multiplier": 1.0,
+    "peak_multiplier": 2.0,
+    "demand_charge_rial_per_kw": 2200000.0,
+    "pf_target": 0.9,
+    "note": "نرخ انرژی بر اساس آخرین نرخ‌نامه ۱۴۰۵ مشترکان تولید (صنعت و معدن) — سایر پارامترها فرضی/قابل‌تنظیم‌اند و باید از قبض واقعی جایگزین شوند."
+  },
+  "sites": [
+    {
+      "site_id": "site_A",
+      "name": "کارخانه نساجی الف",
+      "profile": "industrial",
+      "kpis": {
+        "total_kwh": 1251071.0,
+        "total_bill_rial": 25434904748.0,
+        "peak_demand_kw": 488.4,
+        "contract_demand_kw": 550,
+        "avg_power_factor": 0.904,
+        "avg_thd_percent": 5.23,
+        "anomaly_count": 531,
+        "model_mape_percent": 6.55,
+        "model_mae_kw": 10.21,
+        "days_covered": 180
+      },
+      "daily_series": [
+        {
+          "timestamp": "2026-03-01",
+          "actual_kwh": 8058.52,
+          "expected_kwh": 8081.29,
+          "avg_pf": 0.93,
+          "avg_thd": 4.5,
+          "peak_kw": 433.53
+        },
+        {
+          "timestamp": "2026-03-02",
+          "actual_kwh": 8115.25,
+          "expected_kwh": 8069.96,
+          "avg_pf": 0.93,
+          "avg_thd": 4.57,
+          "peak_kw": 433.55
+        },
+        {
+          "timestamp": "2026-03-03",
+          "actual_kwh": 8037.43,
+          "expected_kwh": 8040.33,
+          "avg_pf": 0.93,
+          "avg_thd": 4.44,
+          "peak_kw": 437.94
+        },
+        {
+          "timestamp": "2026-03-04",
+          "actual_kwh": 8018.39,
+          "expected_kwh": 8026.65,
+          "avg_pf": 0.93,
+          "avg_thd": 4.67,
+          "peak_kw": 425.84
+        },
+        {
+          "timestamp": "2026-03-05",
+          "actual_kwh": 4777.84,
+          "expected_kwh": 4850.07,
+          "avg_pf": 0.93,
+          "avg_thd": 4.44,
+          "peak_kw": 262.08
+        },
+        {
+          "timestamp": "2026-03-06",
+          "actual_kwh": 1214.62,
+          "expected_kwh": 1234.95,
+          "avg_pf": 0.93,
+          "avg_thd": 4.46,
+          "peak_kw": 88.52
+        },
+        {
+          "timestamp": "2026-03-07",
+          "actual_kwh": 8038.78,
+          "expected_kwh": 8029.06,
+          "avg_pf": 0.93,
+          "avg_thd": 4.58,
+          "peak_kw": 441.22
+        },
+        {
+          "timestamp": "2026-03-08",
+          "actual_kwh": 8108.22,
+          "expected_kwh": 8054.37,
+          "avg_pf": 0.93,
+          "avg_thd": 4.57,
+          "peak_kw": 438.95
+        },
+        {
+          "timestamp": "2026-03-09",
+          "actual_kwh": 8016.89,
+          "expected_kwh": 8036.32,
+          "avg_pf": 0.93,
+          "avg_thd": 4.4,
+          "peak_kw": 436.89
+        },
+        {
+          "timestamp": "2026-03-10",
+          "actual_kwh": 8038.69,
+          "expected_kwh": 8031.19,
+          "avg_pf": 0.93,
+          "avg_thd": 4.5,
+          "peak_kw": 450.21
+        },
+        {
+          "timestamp": "2026-03-11",
+          "actual_kwh": 8041.07,
+          "expected_kwh": 8017.59,
+          "avg_pf": 0.93,
+          "avg_thd": 4.58,
+          "peak_kw": 454.86
+        },
+        {
+          "timestamp": "2026-03-12",
+          "actual_kwh": 4886.7,
+          "expected_kwh": 4863.9,
+          "avg_pf": 0.93,
+          "avg_thd": 4.38,
+          "peak_kw": 277.12
+        },
+        {
+          "timestamp": "2026-03-13",
+          "actual_kwh": 1232.03,
+          "expected_kwh": 1224.81,
+          "avg_pf": 0.93,
+          "avg_thd": 4.55,
+          "peak_kw": 83.73
+        },
+        {
+          "timestamp": "2026-03-14",
+          "actual_kwh": 8098.6,
+          "expected_kwh": 8053.01,
+          "avg_pf": 0.93,
+          "avg_thd": 4.5,
+          "peak_kw": 441.85
+        },
+        {
+          "timestamp": "2026-03-15",
+          "actual_kwh": 8083.25,
+          "expected_kwh": 8084.44,
+          "avg_pf": 0.93,
+          "avg_thd": 4.35,
+          "peak_kw": 439.39
+        },
+        {
+          "timestamp": "2026-03-16",
+          "actual_kwh": 8117.18,
+          "expected_kwh": 8045.43,
+          "avg_pf": 0.93,
+          "avg_thd": 4.56,
+          "peak_kw": 435.95
+        },
+        {
+          "timestamp": "2026-03-17",
+          "actual_kwh": 8042.76,
+          "expected_kwh": 8014.51,
+          "avg_pf": 0.93,
+          "avg_thd": 4.7,
+          "peak_kw": 429.12
+        },
+        {
+          "timestamp": "2026-03-18",
+          "actual_kwh": 7985.79,
+          "expected_kwh": 8020.45,
+          "avg_pf": 0.93,
+          "avg_thd": 4.55,
+          "peak_kw": 436.24
+        },
+        {
+          "timestamp": "2026-03-19",
+          "actual_kwh": 4877.31,
+          "expected_kwh": 4870.32,
+          "avg_pf": 0.93,
+          "avg_thd": 4.28,
+          "peak_kw": 267.85
+        },
+        {
+          "timestamp": "2026-03-20",
+          "actual_kwh": 1200.18,
+          "expected_kwh": 1232.18,
+          "avg_pf": 0.93,
+          "avg_thd": 4.52,
+          "peak_kw": 86.25
+        },
+        {
+          "timestamp": "2026-03-21",
+          "actual_kwh": 8042.36,
+          "expected_kwh": 8028.42,
+          "avg_pf": 0.93,
+          "avg_thd": 4.41,
+          "peak_kw": 433.02
+        },
+        {
+          "timestamp": "2026-03-22",
+          "actual_kwh": 8098.61,
+          "expected_kwh": 8087.63,
+          "avg_pf": 0.93,
+          "avg_thd": 4.73,
+          "peak_kw": 430.77
+        },
+        {
+          "timestamp": "2026-03-23",
+          "actual_kwh": 8012.07,
+          "expected_kwh": 8040.46,
+          "avg_pf": 0.93,
+          "avg_thd": 4.57,
+          "peak_kw": 433.77
+        },
+        {
+          "timestamp": "2026-03-24",
+          "actual_kwh": 8012.55,
+          "expected_kwh": 8023.52,
+          "avg_pf": 0.93,
+          "avg_thd": 4.51,
+          "peak_kw": 430.8
+        },
+        {
+          "timestamp": "2026-03-25",
+          "actual_kwh": 8022.69,
+          "expected_kwh": 8045.65,
+          "avg_pf": 0.93,
+          "avg_thd": 4.41,
+          "peak_kw": 443.97
+        },
+        {
+          "timestamp": "2026-03-26",
+          "actual_kwh": 4811.04,
+          "expected_kwh": 4852.45,
+          "avg_pf": 0.93,
+          "avg_thd": 4.5,
+          "peak_kw": 258.46
+        },
+        {
+          "timestamp": "2026-03-27",
+          "actual_kwh": 1193.41,
+          "expected_kwh": 1219.24,
+          "avg_pf": 0.93,
+          "avg_thd": 4.34,
+          "peak_kw": 93.59
+        },
+        {
+          "timestamp": "2026-03-28",
+          "actual_kwh": 8006.52,
+          "expected_kwh": 8038.82,
+          "avg_pf": 0.93,
+          "avg_thd": 4.43,
+          "peak_kw": 434.55
+        },
+        {
+          "timestamp": "2026-03-29",
+          "actual_kwh": 8088.01,
+          "expected_kwh": 8080.47,
+          "avg_pf": 0.93,
+          "avg_thd": 4.46,
+          "peak_kw": 435.02
+        },
+        {
+          "timestamp": "2026-03-30",
+          "actual_kwh": 7961.88,
+          "expected_kwh": 8028.19,
+          "avg_pf": 0.93,
+          "avg_thd": 4.49,
+          "peak_kw": 432.59
+        },
+        {
+          "timestamp": "2026-03-31",
+          "actual_kwh": 8002.96,
+          "expected_kwh": 8027.24,
+          "avg_pf": 0.93,
+          "avg_thd": 4.63,
+          "peak_kw": 429.21
+        },
+        {
+          "timestamp": "2026-04-01",
+          "actual_kwh": 8161.31,
+          "expected_kwh": 8077.7,
+          "avg_pf": 0.93,
+          "avg_thd": 4.47,
+          "peak_kw": 444.59
+        },
+        {
+          "timestamp": "2026-04-02",
+          "actual_kwh": 4872.06,
+          "expected_kwh": 4861.26,
+          "avg_pf": 0.93,
+          "avg_thd": 4.37,
+          "peak_kw": 273.57
+        },
+        {
+          "timestamp": "2026-04-03",
+          "actual_kwh": 1215.23,
+          "expected_kwh": 1246.05,
+          "avg_pf": 0.93,
+          "avg_thd": 4.45,
+          "peak_kw": 78.45
+        },
+        {
+          "timestamp": "2026-04-04",
+          "actual_kwh": 8000.17,
+          "expected_kwh": 8049.51,
+          "avg_pf": 0.93,
+          "avg_thd": 4.58,
+          "peak_kw": 434.57
+        },
+        {
+          "timestamp": "2026-04-05",
+          "actual_kwh": 8134.35,
+          "expected_kwh": 8096.09,
+          "avg_pf": 0.93,
+          "avg_thd": 4.36,
+          "peak_kw": 431.63
+        },
+        {
+          "timestamp": "2026-04-06",
+          "actual_kwh": 7973.99,
+          "expected_kwh": 8037.45,
+          "avg_pf": 0.93,
+          "avg_thd": 4.57,
+          "peak_kw": 428.69
+        },
+        {
+          "timestamp": "2026-04-07",
+          "actual_kwh": 7976.21,
+          "expected_kwh": 8044.23,
+          "avg_pf": 0.93,
+          "avg_thd": 4.44,
+          "peak_kw": 432.59
+        },
+        {
+          "timestamp": "2026-04-08",
+          "actual_kwh": 8158.31,
+          "expected_kwh": 8076.09,
+          "avg_pf": 0.93,
+          "avg_thd": 4.3,
+          "peak_kw": 442.59
+        },
+        {
+          "timestamp": "2026-04-09",
+          "actual_kwh": 4817.96,
+          "expected_kwh": 4865.26,
+          "avg_pf": 0.93,
+          "avg_thd": 4.55,
+          "peak_kw": 266.4
+        },
+        {
+          "timestamp": "2026-04-10",
+          "actual_kwh": 1176.28,
+          "expected_kwh": 1202.79,
+          "avg_pf": 0.93,
+          "avg_thd": 4.63,
+          "peak_kw": 74.09
+        },
+        {
+          "timestamp": "2026-04-11",
+          "actual_kwh": 8145.14,
+          "expected_kwh": 8071.03,
+          "avg_pf": 0.93,
+          "avg_thd": 4.46,
+          "peak_kw": 441.53
+        },
+        {
+          "timestamp": "2026-04-12",
+          "actual_kwh": 8024.14,
+          "expected_kwh": 8074.09,
+          "avg_pf": 0.93,
+          "avg_thd": 4.49,
+          "peak_kw": 427.44
+        },
+        {
+          "timestamp": "2026-04-13",
+          "actual_kwh": 8079.07,
+          "expected_kwh": 8034.17,
+          "avg_pf": 0.93,
+          "avg_thd": 4.53,
+          "peak_kw": 431.69
+        },
+        {
+          "timestamp": "2026-04-14",
+          "actual_kwh": 8115.64,
+          "expected_kwh": 8047.55,
+          "avg_pf": 0.93,
+          "avg_thd": 4.52,
+          "peak_kw": 437.34
+        },
+        {
+          "timestamp": "2026-04-15",
+          "actual_kwh": 8134.0,
+          "expected_kwh": 8071.91,
+          "avg_pf": 0.93,
+          "avg_thd": 4.5,
+          "peak_kw": 429.54
+        },
+        {
+          "timestamp": "2026-04-16",
+          "actual_kwh": 4844.35,
+          "expected_kwh": 4864.3,
+          "avg_pf": 0.93,
+          "avg_thd": 4.51,
+          "peak_kw": 266.48
+        },
+        {
+          "timestamp": "2026-04-17",
+          "actual_kwh": 1200.26,
+          "expected_kwh": 1176.96,
+          "avg_pf": 0.93,
+          "avg_thd": 4.48,
+          "peak_kw": 83.63
+        },
+        {
+          "timestamp": "2026-04-18",
+          "actual_kwh": 7957.19,
+          "expected_kwh": 8042.2,
+          "avg_pf": 0.93,
+          "avg_thd": 4.31,
+          "peak_kw": 449.49
+        },
+        {
+          "timestamp": "2026-04-19",
+          "actual_kwh": 8110.45,
+          "expected_kwh": 8091.3,
+          "avg_pf": 0.93,
+          "avg_thd": 4.5,
+          "peak_kw": 438.38
+        },
+        {
+          "timestamp": "2026-04-20",
+          "actual_kwh": 7972.2,
+          "expected_kwh": 8035.85,
+          "avg_pf": 0.93,
+          "avg_thd": 4.48,
+          "peak_kw": 447.38
+        },
+        {
+          "timestamp": "2026-04-21",
+          "actual_kwh": 8083.02,
+          "expected_kwh": 8060.79,
+          "avg_pf": 0.93,
+          "avg_thd": 4.37,
+          "peak_kw": 427.42
+        },
+        {
+          "timestamp": "2026-04-22",
+          "actual_kwh": 8139.57,
+          "expected_kwh": 8075.88,
+          "avg_pf": 0.93,
+          "avg_thd": 4.47,
+          "peak_kw": 440.88
+        },
+        {
+          "timestamp": "2026-04-23",
+          "actual_kwh": 4833.45,
+          "expected_kwh": 4865.21,
+          "avg_pf": 0.93,
+          "avg_thd": 4.53,
+          "peak_kw": 266.32
+        },
+        {
+          "timestamp": "2026-04-24",
+          "actual_kwh": 1102.27,
+          "expected_kwh": 1145.27,
+          "avg_pf": 0.93,
+          "avg_thd": 4.46,
+          "peak_kw": 77.79
+        },
+        {
+          "timestamp": "2026-04-25",
+          "actual_kwh": 8083.13,
+          "expected_kwh": 8033.86,
+          "avg_pf": 0.93,
+          "avg_thd": 4.55,
+          "peak_kw": 430.52
+        },
+        {
+          "timestamp": "2026-04-26",
+          "actual_kwh": 8085.66,
+          "expected_kwh": 8086.1,
+          "avg_pf": 0.93,
+          "avg_thd": 4.6,
+          "peak_kw": 442.96
+        },
+        {
+          "timestamp": "2026-04-27",
+          "actual_kwh": 8090.61,
+          "expected_kwh": 8069.02,
+          "avg_pf": 0.93,
+          "avg_thd": 4.45,
+          "peak_kw": 443.6
+        },
+        {
+          "timestamp": "2026-04-28",
+          "actual_kwh": 8133.22,
+          "expected_kwh": 8056.22,
+          "avg_pf": 0.93,
+          "avg_thd": 4.48,
+          "peak_kw": 434.19
+        },
+        {
+          "timestamp": "2026-04-29",
+          "actual_kwh": 8099.23,
+          "expected_kwh": 8089.18,
+          "avg_pf": 0.93,
+          "avg_thd": 4.44,
+          "peak_kw": 439.03
+        },
+        {
+          "timestamp": "2026-04-30",
+          "actual_kwh": 4972.33,
+          "expected_kwh": 4906.28,
+          "avg_pf": 0.93,
+          "avg_thd": 4.31,
+          "peak_kw": 270.2
+        },
+        {
+          "timestamp": "2026-05-01",
+          "actual_kwh": 1196.46,
+          "expected_kwh": 1181.29,
+          "avg_pf": 0.93,
+          "avg_thd": 4.37,
+          "peak_kw": 88.15
+        },
+        {
+          "timestamp": "2026-05-02",
+          "actual_kwh": 8103.74,
+          "expected_kwh": 8110.95,
+          "avg_pf": 0.93,
+          "avg_thd": 4.56,
+          "peak_kw": 435.9
+        },
+        {
+          "timestamp": "2026-05-03",
+          "actual_kwh": 8038.32,
+          "expected_kwh": 8084.68,
+          "avg_pf": 0.93,
+          "avg_thd": 4.46,
+          "peak_kw": 445.47
+        },
+        {
+          "timestamp": "2026-05-04",
+          "actual_kwh": 8060.87,
+          "expected_kwh": 8075.02,
+          "avg_pf": 0.93,
+          "avg_thd": 4.35,
+          "peak_kw": 436.37
+        },
+        {
+          "timestamp": "2026-05-05",
+          "actual_kwh": 8004.52,
+          "expected_kwh": 8062.49,
+          "avg_pf": 0.94,
+          "avg_thd": 4.25,
+          "peak_kw": 428.76
+        },
+        {
+          "timestamp": "2026-05-06",
+          "actual_kwh": 8081.74,
+          "expected_kwh": 8083.53,
+          "avg_pf": 0.93,
+          "avg_thd": 4.42,
+          "peak_kw": 439.28
+        },
+        {
+          "timestamp": "2026-05-07",
+          "actual_kwh": 4969.69,
+          "expected_kwh": 4942.44,
+          "avg_pf": 0.93,
+          "avg_thd": 4.6,
+          "peak_kw": 290.03
+        },
+        {
+          "timestamp": "2026-05-08",
+          "actual_kwh": 1266.93,
+          "expected_kwh": 1297.82,
+          "avg_pf": 0.93,
+          "avg_thd": 4.52,
+          "peak_kw": 80.64
+        },
+        {
+          "timestamp": "2026-05-09",
+          "actual_kwh": 8182.18,
+          "expected_kwh": 8174.44,
+          "avg_pf": 0.93,
+          "avg_thd": 4.54,
+          "peak_kw": 445.83
+        },
+        {
+          "timestamp": "2026-05-10",
+          "actual_kwh": 8064.53,
+          "expected_kwh": 8118.98,
+          "avg_pf": 0.93,
+          "avg_thd": 4.6,
+          "peak_kw": 431.86
+        },
+        {
+          "timestamp": "2026-05-11",
+          "actual_kwh": 8180.43,
+          "expected_kwh": 8179.61,
+          "avg_pf": 0.93,
+          "avg_thd": 4.34,
+          "peak_kw": 436.17
+        },
+        {
+          "timestamp": "2026-05-12",
+          "actual_kwh": 8162.16,
+          "expected_kwh": 8142.94,
+          "avg_pf": 0.93,
+          "avg_thd": 4.55,
+          "peak_kw": 441.19
+        },
+        {
+          "timestamp": "2026-05-13",
+          "actual_kwh": 8264.02,
+          "expected_kwh": 8234.11,
+          "avg_pf": 0.93,
+          "avg_thd": 4.53,
+          "peak_kw": 435.41
+        },
+        {
+          "timestamp": "2026-05-14",
+          "actual_kwh": 4886.24,
+          "expected_kwh": 4946.16,
+          "avg_pf": 0.93,
+          "avg_thd": 4.35,
+          "peak_kw": 279.64
+        },
+        {
+          "timestamp": "2026-05-15",
+          "actual_kwh": 1317.92,
+          "expected_kwh": 1346.91,
+          "avg_pf": 0.93,
+          "avg_thd": 4.48,
+          "peak_kw": 87.56
+        },
+        {
+          "timestamp": "2026-05-16",
+          "actual_kwh": 8200.93,
+          "expected_kwh": 8226.5,
+          "avg_pf": 0.93,
+          "avg_thd": 4.66,
+          "peak_kw": 444.97
+        },
+        {
+          "timestamp": "2026-05-17",
+          "actual_kwh": 8323.93,
+          "expected_kwh": 8253.38,
+          "avg_pf": 0.93,
+          "avg_thd": 4.59,
+          "peak_kw": 450.65
+        },
+        {
+          "timestamp": "2026-05-18",
+          "actual_kwh": 8178.57,
+          "expected_kwh": 8222.2,
+          "avg_pf": 0.93,
+          "avg_thd": 4.44,
+          "peak_kw": 457.19
+        },
+        {
+          "timestamp": "2026-05-19",
+          "actual_kwh": 8207.09,
+          "expected_kwh": 8231.73,
+          "avg_pf": 0.93,
+          "avg_thd": 4.39,
+          "peak_kw": 436.16
+        },
+        {
+          "timestamp": "2026-05-20",
+          "actual_kwh": 8195.66,
+          "expected_kwh": 8281.28,
+          "avg_pf": 0.93,
+          "avg_thd": 4.48,
+          "peak_kw": 452.63
+        },
+        {
+          "timestamp": "2026-05-21",
+          "actual_kwh": 5038.67,
+          "expected_kwh": 5158.71,
+          "avg_pf": 0.93,
+          "avg_thd": 4.49,
+          "peak_kw": 274.56
+        },
+        {
+          "timestamp": "2026-05-22",
+          "actual_kwh": 1487.07,
+          "expected_kwh": 1500.1,
+          "avg_pf": 0.93,
+          "avg_thd": 4.55,
+          "peak_kw": 87.91
+        },
+        {
+          "timestamp": "2026-05-23",
+          "actual_kwh": 8397.57,
+          "expected_kwh": 8326.63,
+          "avg_pf": 0.93,
+          "avg_thd": 4.58,
+          "peak_kw": 453.4
+        },
+        {
+          "timestamp": "2026-05-24",
+          "actual_kwh": 8334.58,
+          "expected_kwh": 8349.15,
+          "avg_pf": 0.93,
+          "avg_thd": 4.44,
+          "peak_kw": 454.01
+        },
+        {
+          "timestamp": "2026-05-25",
+          "actual_kwh": 8387.1,
+          "expected_kwh": 8326.79,
+          "avg_pf": 0.93,
+          "avg_thd": 4.54,
+          "peak_kw": 465.44
+        },
+        {
+          "timestamp": "2026-05-26",
+          "actual_kwh": 8301.65,
+          "expected_kwh": 8332.18,
+          "avg_pf": 0.93,
+          "avg_thd": 4.49,
+          "peak_kw": 442.94
+        },
+        {
+          "timestamp": "2026-05-27",
+          "actual_kwh": 8423.06,
+          "expected_kwh": 8414.06,
+          "avg_pf": 0.93,
+          "avg_thd": 4.29,
+          "peak_kw": 458.71
+        },
+        {
+          "timestamp": "2026-05-28",
+          "actual_kwh": 5291.82,
+          "expected_kwh": 5214.99,
+          "avg_pf": 0.94,
+          "avg_thd": 4.45,
+          "peak_kw": 290.59
+        },
+        {
+          "timestamp": "2026-05-29",
+          "actual_kwh": 1600.35,
+          "expected_kwh": 1595.9,
+          "avg_pf": 0.93,
+          "avg_thd": 4.41,
+          "peak_kw": 89.56
+        },
+        {
+          "timestamp": "2026-05-30",
+          "actual_kwh": 8467.69,
+          "expected_kwh": 8481.77,
+          "avg_pf": 0.93,
+          "avg_thd": 4.42,
+          "peak_kw": 434.33
+        },
+        {
+          "timestamp": "2026-05-31",
+          "actual_kwh": 8424.92,
+          "expected_kwh": 8432.08,
+          "avg_pf": 0.93,
+          "avg_thd": 4.4,
+          "peak_kw": 440.11
+        },
+        {
+          "timestamp": "2026-06-01",
+          "actual_kwh": 8511.54,
+          "expected_kwh": 8446.51,
+          "avg_pf": 0.93,
+          "avg_thd": 4.63,
+          "peak_kw": 444.14
+        },
+        {
+          "timestamp": "2026-06-02",
+          "actual_kwh": 8388.87,
+          "expected_kwh": 8475.56,
+          "avg_pf": 0.93,
+          "avg_thd": 4.64,
+          "peak_kw": 454.98
+        },
+        {
+          "timestamp": "2026-06-03",
+          "actual_kwh": 8410.93,
+          "expected_kwh": 8474.22,
+          "avg_pf": 0.93,
+          "avg_thd": 4.66,
+          "peak_kw": 456.09
+        },
+        {
+          "timestamp": "2026-06-04",
+          "actual_kwh": 5381.41,
+          "expected_kwh": 5328.24,
+          "avg_pf": 0.92,
+          "avg_thd": 4.69,
+          "peak_kw": 296.33
+        },
+        {
+          "timestamp": "2026-06-05",
+          "actual_kwh": 1859.8,
+          "expected_kwh": 1806.09,
+          "avg_pf": 0.92,
+          "avg_thd": 4.77,
+          "peak_kw": 105.16
+        },
+        {
+          "timestamp": "2026-06-06",
+          "actual_kwh": 8613.69,
+          "expected_kwh": 8570.94,
+          "avg_pf": 0.92,
+          "avg_thd": 4.88,
+          "peak_kw": 476.44
+        },
+        {
+          "timestamp": "2026-06-07",
+          "actual_kwh": 8565.39,
+          "expected_kwh": 8529.38,
+          "avg_pf": 0.92,
+          "avg_thd": 4.87,
+          "peak_kw": 468.69
+        },
+        {
+          "timestamp": "2026-06-08",
+          "actual_kwh": 8395.94,
+          "expected_kwh": 8456.77,
+          "avg_pf": 0.92,
+          "avg_thd": 5.01,
+          "peak_kw": 460.35
+        },
+        {
+          "timestamp": "2026-06-09",
+          "actual_kwh": 8486.53,
+          "expected_kwh": 8577.7,
+          "avg_pf": 0.92,
+          "avg_thd": 4.9,
+          "peak_kw": 470.75
+        },
+        {
+          "timestamp": "2026-06-10",
+          "actual_kwh": 8644.93,
+          "expected_kwh": 8580.04,
+          "avg_pf": 0.92,
+          "avg_thd": 4.86,
+          "peak_kw": 450.6
+        },
+        {
+          "timestamp": "2026-06-11",
+          "actual_kwh": 5294.42,
+          "expected_kwh": 5423.11,
+          "avg_pf": 0.74,
+          "avg_thd": 5.05,
+          "peak_kw": 285.4
+        },
+        {
+          "timestamp": "2026-06-12",
+          "actual_kwh": 1806.45,
+          "expected_kwh": 1807.05,
+          "avg_pf": 0.92,
+          "avg_thd": 4.74,
+          "peak_kw": 102.88
+        },
+        {
+          "timestamp": "2026-06-13",
+          "actual_kwh": 8689.4,
+          "expected_kwh": 8643.14,
+          "avg_pf": 0.91,
+          "avg_thd": 4.97,
+          "peak_kw": 481.61
+        },
+        {
+          "timestamp": "2026-06-14",
+          "actual_kwh": 8704.24,
+          "expected_kwh": 8664.17,
+          "avg_pf": 0.91,
+          "avg_thd": 4.98,
+          "peak_kw": 470.47
+        },
+        {
+          "timestamp": "2026-06-15",
+          "actual_kwh": 8630.37,
+          "expected_kwh": 8617.62,
+          "avg_pf": 0.91,
+          "avg_thd": 4.93,
+          "peak_kw": 462.96
+        },
+        {
+          "timestamp": "2026-06-16",
+          "actual_kwh": 8792.69,
+          "expected_kwh": 8692.08,
+          "avg_pf": 0.91,
+          "avg_thd": 5.16,
+          "peak_kw": 472.57
+        },
+        {
+          "timestamp": "2026-06-17",
+          "actual_kwh": 8543.06,
+          "expected_kwh": 8596.39,
+          "avg_pf": 0.91,
+          "avg_thd": 4.99,
+          "peak_kw": 465.4
+        },
+        {
+          "timestamp": "2026-06-18",
+          "actual_kwh": 5544.34,
+          "expected_kwh": 5522.62,
+          "avg_pf": 0.91,
+          "avg_thd": 5.09,
+          "peak_kw": 302.51
+        },
+        {
+          "timestamp": "2026-06-19",
+          "actual_kwh": 1748.58,
+          "expected_kwh": 1810.52,
+          "avg_pf": 0.91,
+          "avg_thd": 5.05,
+          "peak_kw": 122.79
+        },
+        {
+          "timestamp": "2026-06-20",
+          "actual_kwh": 8626.07,
+          "expected_kwh": 8645.96,
+          "avg_pf": 0.9,
+          "avg_thd": 5.21,
+          "peak_kw": 466.36
+        },
+        {
+          "timestamp": "2026-06-21",
+          "actual_kwh": 8743.45,
+          "expected_kwh": 8767.57,
+          "avg_pf": 0.91,
+          "avg_thd": 5.14,
+          "peak_kw": 469.44
+        },
+        {
+          "timestamp": "2026-06-22",
+          "actual_kwh": 8679.6,
+          "expected_kwh": 8717.77,
+          "avg_pf": 0.91,
+          "avg_thd": 4.98,
+          "peak_kw": 461.39
+        },
+        {
+          "timestamp": "2026-06-23",
+          "actual_kwh": 8744.68,
+          "expected_kwh": 8710.32,
+          "avg_pf": 0.91,
+          "avg_thd": 5.2,
+          "peak_kw": 462.84
+        },
+        {
+          "timestamp": "2026-06-24",
+          "actual_kwh": 8701.13,
+          "expected_kwh": 8661.06,
+          "avg_pf": 0.9,
+          "avg_thd": 5.2,
+          "peak_kw": 470.31
+        },
+        {
+          "timestamp": "2026-06-25",
+          "actual_kwh": 5433.55,
+          "expected_kwh": 5431.7,
+          "avg_pf": 0.9,
+          "avg_thd": 5.42,
+          "peak_kw": 291.31
+        },
+        {
+          "timestamp": "2026-06-26",
+          "actual_kwh": 1870.2,
+          "expected_kwh": 1906.92,
+          "avg_pf": 0.9,
+          "avg_thd": 5.16,
+          "peak_kw": 110.92
+        },
+        {
+          "timestamp": "2026-06-27",
+          "actual_kwh": 8806.02,
+          "expected_kwh": 8748.46,
+          "avg_pf": 0.9,
+          "avg_thd": 5.43,
+          "peak_kw": 464.03
+        },
+        {
+          "timestamp": "2026-06-28",
+          "actual_kwh": 8561.98,
+          "expected_kwh": 8648.73,
+          "avg_pf": 0.9,
+          "avg_thd": 5.6,
+          "peak_kw": 488.4
+        },
+        {
+          "timestamp": "2026-06-29",
+          "actual_kwh": 8680.01,
+          "expected_kwh": 8664.42,
+          "avg_pf": 0.9,
+          "avg_thd": 5.73,
+          "peak_kw": 458.5
+        },
+        {
+          "timestamp": "2026-06-30",
+          "actual_kwh": 8784.08,
+          "expected_kwh": 8757.24,
+          "avg_pf": 0.9,
+          "avg_thd": 5.59,
+          "peak_kw": 483.51
+        },
+        {
+          "timestamp": "2026-07-01",
+          "actual_kwh": 8744.02,
+          "expected_kwh": 8740.85,
+          "avg_pf": 0.9,
+          "avg_thd": 5.65,
+          "peak_kw": 474.07
+        },
+        {
+          "timestamp": "2026-07-02",
+          "actual_kwh": 5458.54,
+          "expected_kwh": 5533.88,
+          "avg_pf": 0.89,
+          "avg_thd": 5.49,
+          "peak_kw": 298.89
+        },
+        {
+          "timestamp": "2026-07-03",
+          "actual_kwh": 1997.68,
+          "expected_kwh": 1941.87,
+          "avg_pf": 0.89,
+          "avg_thd": 5.65,
+          "peak_kw": 124.11
+        },
+        {
+          "timestamp": "2026-07-04",
+          "actual_kwh": 8708.96,
+          "expected_kwh": 8687.75,
+          "avg_pf": 0.89,
+          "avg_thd": 5.48,
+          "peak_kw": 475.38
+        },
+        {
+          "timestamp": "2026-07-05",
+          "actual_kwh": 8678.94,
+          "expected_kwh": 8684.86,
+          "avg_pf": 0.89,
+          "avg_thd": 5.7,
+          "peak_kw": 461.31
+        },
+        {
+          "timestamp": "2026-07-06",
+          "actual_kwh": 8779.2,
+          "expected_kwh": 8749.08,
+          "avg_pf": 0.89,
+          "avg_thd": 5.87,
+          "peak_kw": 476.88
+        },
+        {
+          "timestamp": "2026-07-07",
+          "actual_kwh": 8704.2,
+          "expected_kwh": 8746.59,
+          "avg_pf": 0.88,
+          "avg_thd": 5.82,
+          "peak_kw": 458.97
+        },
+        {
+          "timestamp": "2026-07-08",
+          "actual_kwh": 8800.08,
+          "expected_kwh": 8772.73,
+          "avg_pf": 0.89,
+          "avg_thd": 5.83,
+          "peak_kw": 468.09
+        },
+        {
+          "timestamp": "2026-07-09",
+          "actual_kwh": 5585.64,
+          "expected_kwh": 5526.73,
+          "avg_pf": 0.88,
+          "avg_thd": 5.79,
+          "peak_kw": 294.17
+        },
+        {
+          "timestamp": "2026-07-10",
+          "actual_kwh": 1818.9,
+          "expected_kwh": 1844.43,
+          "avg_pf": 0.88,
+          "avg_thd": 5.78,
+          "peak_kw": 114.4
+        },
+        {
+          "timestamp": "2026-07-11",
+          "actual_kwh": 8646.89,
+          "expected_kwh": 8716.13,
+          "avg_pf": 0.88,
+          "avg_thd": 6.14,
+          "peak_kw": 462.35
+        },
+        {
+          "timestamp": "2026-07-12",
+          "actual_kwh": 8802.73,
+          "expected_kwh": 8743.73,
+          "avg_pf": 0.88,
+          "avg_thd": 5.83,
+          "peak_kw": 470.18
+        },
+        {
+          "timestamp": "2026-07-13",
+          "actual_kwh": 8740.01,
+          "expected_kwh": 8741.56,
+          "avg_pf": 0.88,
+          "avg_thd": 5.99,
+          "peak_kw": 460.79
+        },
+        {
+          "timestamp": "2026-07-14",
+          "actual_kwh": 8791.85,
+          "expected_kwh": 8775.02,
+          "avg_pf": 0.88,
+          "avg_thd": 6.18,
+          "peak_kw": 466.9
+        },
+        {
+          "timestamp": "2026-07-15",
+          "actual_kwh": 8677.72,
+          "expected_kwh": 8710.08,
+          "avg_pf": 0.88,
+          "avg_thd": 5.97,
+          "peak_kw": 467.56
+        },
+        {
+          "timestamp": "2026-07-16",
+          "actual_kwh": 5591.69,
+          "expected_kwh": 5565.17,
+          "avg_pf": 0.88,
+          "avg_thd": 6.09,
+          "peak_kw": 297.94
+        },
+        {
+          "timestamp": "2026-07-17",
+          "actual_kwh": 1905.45,
+          "expected_kwh": 1931.96,
+          "avg_pf": 0.87,
+          "avg_thd": 6.22,
+          "peak_kw": 116.2
+        },
+        {
+          "timestamp": "2026-07-18",
+          "actual_kwh": 8658.28,
+          "expected_kwh": 8713.49,
+          "avg_pf": 0.88,
+          "avg_thd": 6.03,
+          "peak_kw": 465.56
+        },
+        {
+          "timestamp": "2026-07-19",
+          "actual_kwh": 8620.53,
+          "expected_kwh": 8655.2,
+          "avg_pf": 0.87,
+          "avg_thd": 6.1,
+          "peak_kw": 453.89
+        },
+        {
+          "timestamp": "2026-07-20",
+          "actual_kwh": 8641.31,
+          "expected_kwh": 8740.91,
+          "avg_pf": 0.87,
+          "avg_thd": 6.27,
+          "peak_kw": 468.12
+        },
+        {
+          "timestamp": "2026-07-21",
+          "actual_kwh": 8797.25,
+          "expected_kwh": 8761.6,
+          "avg_pf": 0.87,
+          "avg_thd": 6.3,
+          "peak_kw": 462.92
+        },
+        {
+          "timestamp": "2026-07-22",
+          "actual_kwh": 8755.61,
+          "expected_kwh": 8713.13,
+          "avg_pf": 0.87,
+          "avg_thd": 6.32,
+          "peak_kw": 472.15
+        },
+        {
+          "timestamp": "2026-07-23",
+          "actual_kwh": 5462.59,
+          "expected_kwh": 5493.85,
+          "avg_pf": 0.87,
+          "avg_thd": 6.31,
+          "peak_kw": 294.23
+        },
+        {
+          "timestamp": "2026-07-24",
+          "actual_kwh": 1923.44,
+          "expected_kwh": 1873.04,
+          "avg_pf": 0.87,
+          "avg_thd": 6.35,
+          "peak_kw": 110.5
+        },
+        {
+          "timestamp": "2026-07-25",
+          "actual_kwh": 8670.27,
+          "expected_kwh": 8659.28,
+          "avg_pf": 0.87,
+          "avg_thd": 6.13,
+          "peak_kw": 455.54
+        },
+        {
+          "timestamp": "2026-07-26",
+          "actual_kwh": 8744.44,
+          "expected_kwh": 8712.21,
+          "avg_pf": 0.87,
+          "avg_thd": 6.37,
+          "peak_kw": 462.21
+        },
+        {
+          "timestamp": "2026-07-27",
+          "actual_kwh": 8738.1,
+          "expected_kwh": 8720.24,
+          "avg_pf": 0.86,
+          "avg_thd": 6.4,
+          "peak_kw": 469.26
+        },
+        {
+          "timestamp": "2026-07-28",
+          "actual_kwh": 8791.57,
+          "expected_kwh": 8745.45,
+          "avg_pf": 0.86,
+          "avg_thd": 6.43,
+          "peak_kw": 461.06
+        },
+        {
+          "timestamp": "2026-07-29",
+          "actual_kwh": 8704.36,
+          "expected_kwh": 8702.64,
+          "avg_pf": 0.86,
+          "avg_thd": 6.57,
+          "peak_kw": 470.66
+        },
+        {
+          "timestamp": "2026-07-30",
+          "actual_kwh": 5437.28,
+          "expected_kwh": 5449.62,
+          "avg_pf": 0.86,
+          "avg_thd": 6.54,
+          "peak_kw": 295.82
+        },
+        {
+          "timestamp": "2026-07-31",
+          "actual_kwh": 1879.88,
+          "expected_kwh": 1901.81,
+          "avg_pf": 0.86,
+          "avg_thd": 6.65,
+          "peak_kw": 103.45
+        },
+        {
+          "timestamp": "2026-08-01",
+          "actual_kwh": 8690.76,
+          "expected_kwh": 8711.24,
+          "avg_pf": 0.86,
+          "avg_thd": 6.73,
+          "peak_kw": 448.59
+        },
+        {
+          "timestamp": "2026-08-02",
+          "actual_kwh": 8629.03,
+          "expected_kwh": 8635.78,
+          "avg_pf": 0.86,
+          "avg_thd": 6.46,
+          "peak_kw": 460.92
+        },
+        {
+          "timestamp": "2026-08-03",
+          "actual_kwh": 8643.36,
+          "expected_kwh": 8602.76,
+          "avg_pf": 0.86,
+          "avg_thd": 6.57,
+          "peak_kw": 463.98
+        },
+        {
+          "timestamp": "2026-08-04",
+          "actual_kwh": 8640.64,
+          "expected_kwh": 8630.0,
+          "avg_pf": 0.86,
+          "avg_thd": 6.55,
+          "peak_kw": 450.33
+        },
+        {
+          "timestamp": "2026-08-05",
+          "actual_kwh": 8561.08,
+          "expected_kwh": 8576.87,
+          "avg_pf": 0.86,
+          "avg_thd": 6.59,
+          "peak_kw": 446.71
+        },
+        {
+          "timestamp": "2026-08-06",
+          "actual_kwh": 5227.67,
+          "expected_kwh": 5286.82,
+          "avg_pf": 0.85,
+          "avg_thd": 6.72,
+          "peak_kw": 280.44
+        },
+        {
+          "timestamp": "2026-08-07",
+          "actual_kwh": 1788.24,
+          "expected_kwh": 1742.74,
+          "avg_pf": 0.85,
+          "avg_thd": 6.8,
+          "peak_kw": 98.09
+        },
+        {
+          "timestamp": "2026-08-08",
+          "actual_kwh": 8524.04,
+          "expected_kwh": 8564.42,
+          "avg_pf": 0.85,
+          "avg_thd": 6.84,
+          "peak_kw": 471.75
+        },
+        {
+          "timestamp": "2026-08-09",
+          "actual_kwh": 8484.61,
+          "expected_kwh": 8521.89,
+          "avg_pf": 0.85,
+          "avg_thd": 6.84,
+          "peak_kw": 454.88
+        },
+        {
+          "timestamp": "2026-08-10",
+          "actual_kwh": 8489.13,
+          "expected_kwh": 8578.75,
+          "avg_pf": 0.85,
+          "avg_thd": 6.98,
+          "peak_kw": 467.76
+        },
+        {
+          "timestamp": "2026-08-11",
+          "actual_kwh": 8531.12,
+          "expected_kwh": 8595.52,
+          "avg_pf": 0.85,
+          "avg_thd": 6.97,
+          "peak_kw": 457.73
+        },
+        {
+          "timestamp": "2026-08-12",
+          "actual_kwh": 8566.32,
+          "expected_kwh": 8558.37,
+          "avg_pf": 0.85,
+          "avg_thd": 7.12,
+          "peak_kw": 459.88
+        },
+        {
+          "timestamp": "2026-08-13",
+          "actual_kwh": 5361.0,
+          "expected_kwh": 5385.98,
+          "avg_pf": 0.85,
+          "avg_thd": 6.97,
+          "peak_kw": 292.98
+        },
+        {
+          "timestamp": "2026-08-14",
+          "actual_kwh": 1602.11,
+          "expected_kwh": 1627.16,
+          "avg_pf": 0.84,
+          "avg_thd": 7.12,
+          "peak_kw": 103.22
+        },
+        {
+          "timestamp": "2026-08-15",
+          "actual_kwh": 8491.7,
+          "expected_kwh": 8533.73,
+          "avg_pf": 0.85,
+          "avg_thd": 7.08,
+          "peak_kw": 456.54
+        },
+        {
+          "timestamp": "2026-08-16",
+          "actual_kwh": 8503.22,
+          "expected_kwh": 8493.13,
+          "avg_pf": 0.84,
+          "avg_thd": 7.07,
+          "peak_kw": 442.06
+        },
+        {
+          "timestamp": "2026-08-17",
+          "actual_kwh": 8404.05,
+          "expected_kwh": 8467.41,
+          "avg_pf": 0.84,
+          "avg_thd": 7.2,
+          "peak_kw": 439.38
+        },
+        {
+          "timestamp": "2026-08-18",
+          "actual_kwh": 8541.39,
+          "expected_kwh": 8513.62,
+          "avg_pf": 0.84,
+          "avg_thd": 7.11,
+          "peak_kw": 457.12
+        },
+        {
+          "timestamp": "2026-08-19",
+          "actual_kwh": 8492.48,
+          "expected_kwh": 8476.6,
+          "avg_pf": 0.84,
+          "avg_thd": 7.02,
+          "peak_kw": 448.79
+        },
+        {
+          "timestamp": "2026-08-20",
+          "actual_kwh": 5291.61,
+          "expected_kwh": 5294.71,
+          "avg_pf": 0.84,
+          "avg_thd": 7.33,
+          "peak_kw": 321.35
+        },
+        {
+          "timestamp": "2026-08-21",
+          "actual_kwh": 1506.62,
+          "expected_kwh": 1568.65,
+          "avg_pf": 0.84,
+          "avg_thd": 7.25,
+          "peak_kw": 88.09
+        },
+        {
+          "timestamp": "2026-08-22",
+          "actual_kwh": 8411.98,
+          "expected_kwh": 8458.68,
+          "avg_pf": 0.83,
+          "avg_thd": 7.25,
+          "peak_kw": 460.34
+        },
+        {
+          "timestamp": "2026-08-23",
+          "actual_kwh": 8502.83,
+          "expected_kwh": 8370.12,
+          "avg_pf": 0.84,
+          "avg_thd": 7.2,
+          "peak_kw": 446.98
+        },
+        {
+          "timestamp": "2026-08-24",
+          "actual_kwh": 8480.73,
+          "expected_kwh": 8409.63,
+          "avg_pf": 0.84,
+          "avg_thd": 7.37,
+          "peak_kw": 454.59
+        },
+        {
+          "timestamp": "2026-08-25",
+          "actual_kwh": 8375.47,
+          "expected_kwh": 8368.49,
+          "avg_pf": 0.83,
+          "avg_thd": 7.54,
+          "peak_kw": 456.96
+        },
+        {
+          "timestamp": "2026-08-26",
+          "actual_kwh": 8346.82,
+          "expected_kwh": 8353.53,
+          "avg_pf": 0.83,
+          "avg_thd": 7.19,
+          "peak_kw": 464.52
+        },
+        {
+          "timestamp": "2026-08-27",
+          "actual_kwh": 5109.84,
+          "expected_kwh": 5106.57,
+          "avg_pf": 0.83,
+          "avg_thd": 7.38,
+          "peak_kw": 294.58
+        }
+      ],
+      "hourly_profile_sample": [
+        {
+          "hour": 0,
+          "active_power_kw": 233.68,
+          "expected_power_kw": 233.99,
+          "power_factor": 0.93,
+          "thd_percent": 4.65
+        },
+        {
+          "hour": 1,
+          "active_power_kw": 248.2,
+          "expected_power_kw": 233.57,
+          "power_factor": 0.94,
+          "thd_percent": 3.55
+        },
+        {
+          "hour": 2,
+          "active_power_kw": 232.1,
+          "expected_power_kw": 227.79,
+          "power_factor": 0.93,
+          "thd_percent": 4.25
+        },
+        {
+          "hour": 3,
+          "active_power_kw": 237.97,
+          "expected_power_kw": 234.28,
+          "power_factor": 0.94,
+          "thd_percent": 4.4
+        },
+        {
+          "hour": 4,
+          "active_power_kw": 230.32,
+          "expected_power_kw": 232.81,
+          "power_factor": 0.93,
+          "thd_percent": 4.23
+        },
+        {
+          "hour": 5,
+          "active_power_kw": 228.96,
+          "expected_power_kw": 226.45,
+          "power_factor": 0.92,
+          "thd_percent": 5.06
+        },
+        {
+          "hour": 6,
+          "active_power_kw": 221.65,
+          "expected_power_kw": 231.19,
+          "power_factor": 0.95,
+          "thd_percent": 3.68
+        },
+        {
+          "hour": 7,
+          "active_power_kw": 425.16,
+          "expected_power_kw": 420.21,
+          "power_factor": 0.92,
+          "thd_percent": 4.67
+        },
+        {
+          "hour": 8,
+          "active_power_kw": 409.78,
+          "expected_power_kw": 417.86,
+          "power_factor": 0.92,
+          "thd_percent": 4.91
+        },
+        {
+          "hour": 9,
+          "active_power_kw": 427.99,
+          "expected_power_kw": 419.34,
+          "power_factor": 0.93,
+          "thd_percent": 4.9
+        },
+        {
+          "hour": 10,
+          "active_power_kw": 433.02,
+          "expected_power_kw": 420.18,
+          "power_factor": 0.93,
+          "thd_percent": 4.52
+        },
+        {
+          "hour": 11,
+          "active_power_kw": 424.4,
+          "expected_power_kw": 421.05,
+          "power_factor": 0.93,
+          "thd_percent": 4.29
+        },
+        {
+          "hour": 12,
+          "active_power_kw": 416.57,
+          "expected_power_kw": 420.1,
+          "power_factor": 0.93,
+          "thd_percent": 4.32
+        },
+        {
+          "hour": 13,
+          "active_power_kw": 425.45,
+          "expected_power_kw": 421.54,
+          "power_factor": 0.93,
+          "thd_percent": 4.77
+        },
+        {
+          "hour": 14,
+          "active_power_kw": 416.3,
+          "expected_power_kw": 422.12,
+          "power_factor": 0.93,
+          "thd_percent": 4.04
+        },
+        {
+          "hour": 15,
+          "active_power_kw": 368.23,
+          "expected_power_kw": 354.82,
+          "power_factor": 0.91,
+          "thd_percent": 5.14
+        },
+        {
+          "hour": 16,
+          "active_power_kw": 335.02,
+          "expected_power_kw": 348.96,
+          "power_factor": 0.95,
+          "thd_percent": 3.78
+        },
+        {
+          "hour": 17,
+          "active_power_kw": 352.97,
+          "expected_power_kw": 353.89,
+          "power_factor": 0.93,
+          "thd_percent": 4.5
+        },
+        {
+          "hour": 18,
+          "active_power_kw": 333.11,
+          "expected_power_kw": 350.13,
+          "power_factor": 0.94,
+          "thd_percent": 3.92
+        },
+        {
+          "hour": 19,
+          "active_power_kw": 339.06,
+          "expected_power_kw": 350.11,
+          "power_factor": 0.92,
+          "thd_percent": 4.17
+        },
+        {
+          "hour": 20,
+          "active_power_kw": 373.37,
+          "expected_power_kw": 354.42,
+          "power_factor": 0.93,
+          "thd_percent": 4.85
+        },
+        {
+          "hour": 21,
+          "active_power_kw": 367.74,
+          "expected_power_kw": 353.94,
+          "power_factor": 0.92,
+          "thd_percent": 5.09
+        },
+        {
+          "hour": 22,
+          "active_power_kw": 348.37,
+          "expected_power_kw": 352.95,
+          "power_factor": 0.94,
+          "thd_percent": 3.34
+        },
+        {
+          "hour": 23,
+          "active_power_kw": 212.97,
+          "expected_power_kw": 226.74,
+          "power_factor": 0.92,
+          "thd_percent": 4.82
+        }
+      ],
+      "anomalies": [
+        {
+          "timestamp": "2026-06-11T07:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.756,
+          "voltage_pu": 1.006,
+          "thd_percent": 4.67,
+          "active_power_kw": 285.4
+        },
+        {
+          "timestamp": "2026-06-11T08:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.737,
+          "voltage_pu": 1.018,
+          "thd_percent": 5.22,
+          "active_power_kw": 281.8
+        },
+        {
+          "timestamp": "2026-06-11T09:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.744,
+          "voltage_pu": 0.987,
+          "thd_percent": 5.39,
+          "active_power_kw": 268.3
+        },
+        {
+          "timestamp": "2026-06-11T10:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.733,
+          "voltage_pu": 0.996,
+          "thd_percent": 6.01,
+          "active_power_kw": 255.3
+        },
+        {
+          "timestamp": "2026-06-11T11:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.761,
+          "voltage_pu": 1.014,
+          "thd_percent": 5.04,
+          "active_power_kw": 254.2
+        },
+        {
+          "timestamp": "2026-06-11T12:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.757,
+          "voltage_pu": 1.024,
+          "thd_percent": 4.92,
+          "active_power_kw": 259.3
+        },
+        {
+          "timestamp": "2026-06-11T13:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.745,
+          "voltage_pu": 0.988,
+          "thd_percent": 4.85,
+          "active_power_kw": 263.4
+        },
+        {
+          "timestamp": "2026-08-27T01:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت",
+            "اعوجاج هارمونیکی بالا (THD)"
+          ],
+          "severity": 3,
+          "power_factor": 0.796,
+          "voltage_pu": 0.998,
+          "thd_percent": 8.76,
+          "active_power_kw": 143.9
+        },
+        {
+          "timestamp": "2026-06-11T06:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.733,
+          "voltage_pu": 1.0,
+          "thd_percent": 5.03,
+          "active_power_kw": 160.4
+        },
+        {
+          "timestamp": "2026-06-11T15:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.761,
+          "voltage_pu": 1.005,
+          "thd_percent": 4.45,
+          "active_power_kw": 213.2
+        },
+        {
+          "timestamp": "2026-06-11T16:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.742,
+          "voltage_pu": 0.993,
+          "thd_percent": 5.24,
+          "active_power_kw": 233.8
+        },
+        {
+          "timestamp": "2026-06-11T17:00:00",
+          "site_id": "site_A",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.734,
+          "voltage_pu": 0.991,
+          "thd_percent": 5.56,
+          "active_power_kw": 233.0
+        }
+      ],
+      "monthly_bills": [
+        {
+          "year_month": "2026-03",
+          "energy_cost_rial": 3208452632.0,
+          "pf_penalty_rial": 2402.0,
+          "peak_demand_kw": 455.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 209242.0,
+          "demand_charge_rial": 1000693773.0,
+          "total_bill_rial": 4209148808.0
+        },
+        {
+          "year_month": "2026-04",
+          "energy_cost_rial": 3044691543.0,
+          "pf_penalty_rial": 13973.0,
+          "peak_demand_kw": 449.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 198691.0,
+          "demand_charge_rial": 988875996.0,
+          "total_bill_rial": 4033581513.0
+        },
+        {
+          "year_month": "2026-05",
+          "energy_cost_rial": 3184861930.0,
+          "pf_penalty_rial": 0.0,
+          "peak_demand_kw": 465.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 208040.0,
+          "demand_charge_rial": 1023960601.0,
+          "total_bill_rial": 4208822531.0
+        },
+        {
+          "year_month": "2026-06",
+          "energy_cost_rial": 3331297517.0,
+          "pf_penalty_rial": 9969752.0,
+          "peak_demand_kw": 488.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 218643.0,
+          "demand_charge_rial": 1074476612.0,
+          "total_bill_rial": 4415743881.0
+        },
+        {
+          "year_month": "2026-07",
+          "energy_cost_rial": 3354301388.0,
+          "pf_penalty_rial": 43114866.0,
+          "peak_demand_kw": 477.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 220257.0,
+          "demand_charge_rial": 1049129234.0,
+          "total_bill_rial": 4446545488.0
+        },
+        {
+          "year_month": "2026-08",
+          "energy_cost_rial": 2992909623.0,
+          "pf_penalty_rial": 90293948.0,
+          "peak_demand_kw": 472.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 196198.0,
+          "demand_charge_rial": 1037858956.0,
+          "total_bill_rial": 4121062527.0
+        }
+      ],
+      "what_if": {
+        "pf_correction": {
+          "period_savings_rial": 143394942.0,
+          "annualized_savings_rial": 286789884.0,
+          "savings_percent": 0.56
+        },
+        "peak_shift": {
+          "period_savings_rial": 963001523.0,
+          "annualized_savings_rial": 1926003046.0,
+          "savings_percent": 3.79
+        },
+        "combined": {
+          "period_savings_rial": 1098938103.0,
+          "annualized_savings_rial": 2197876206.0,
+          "savings_percent": 4.32
+        },
+        "baseline_annualized_bill_rial": 50869809496.0
+      }
+    },
+    {
+      "site_id": "site_B",
+      "name": "مجتمع اداری-تجاری ب",
+      "profile": "commercial",
+      "kpis": {
+        "total_kwh": 314619.0,
+        "total_bill_rial": 7316903718.0,
+        "peak_demand_kw": 196.3,
+        "contract_demand_kw": 220,
+        "avg_power_factor": 0.899,
+        "avg_thd_percent": 2.99,
+        "anomaly_count": 170,
+        "model_mape_percent": 14.77,
+        "model_mae_kw": 5.01,
+        "days_covered": 180
+      },
+      "daily_series": [
+        {
+          "timestamp": "2026-03-01",
+          "actual_kwh": 1480.57,
+          "expected_kwh": 1475.58,
+          "avg_pf": 0.9,
+          "avg_thd": 2.97,
+          "peak_kw": 106.68
+        },
+        {
+          "timestamp": "2026-03-02",
+          "actual_kwh": 1501.3,
+          "expected_kwh": 1475.57,
+          "avg_pf": 0.89,
+          "avg_thd": 2.99,
+          "peak_kw": 103.39
+        },
+        {
+          "timestamp": "2026-03-03",
+          "actual_kwh": 1438.85,
+          "expected_kwh": 1442.29,
+          "avg_pf": 0.9,
+          "avg_thd": 2.91,
+          "peak_kw": 101.36
+        },
+        {
+          "timestamp": "2026-03-04",
+          "actual_kwh": 1425.74,
+          "expected_kwh": 1436.34,
+          "avg_pf": 0.9,
+          "avg_thd": 3.13,
+          "peak_kw": 95.79
+        },
+        {
+          "timestamp": "2026-03-05",
+          "actual_kwh": 1409.13,
+          "expected_kwh": 1437.85,
+          "avg_pf": 0.9,
+          "avg_thd": 2.93,
+          "peak_kw": 100.94
+        },
+        {
+          "timestamp": "2026-03-06",
+          "actual_kwh": 542.67,
+          "expected_kwh": 530.82,
+          "avg_pf": 0.9,
+          "avg_thd": 2.93,
+          "peak_kw": 54.01
+        },
+        {
+          "timestamp": "2026-03-07",
+          "actual_kwh": 1426.92,
+          "expected_kwh": 1434.58,
+          "avg_pf": 0.91,
+          "avg_thd": 3.21,
+          "peak_kw": 103.05
+        },
+        {
+          "timestamp": "2026-03-08",
+          "actual_kwh": 1457.57,
+          "expected_kwh": 1431.56,
+          "avg_pf": 0.9,
+          "avg_thd": 3.0,
+          "peak_kw": 99.47
+        },
+        {
+          "timestamp": "2026-03-09",
+          "actual_kwh": 1407.25,
+          "expected_kwh": 1425.53,
+          "avg_pf": 0.9,
+          "avg_thd": 2.91,
+          "peak_kw": 98.44
+        },
+        {
+          "timestamp": "2026-03-10",
+          "actual_kwh": 1425.07,
+          "expected_kwh": 1428.76,
+          "avg_pf": 0.9,
+          "avg_thd": 3.0,
+          "peak_kw": 105.1
+        },
+        {
+          "timestamp": "2026-03-11",
+          "actual_kwh": 1426.87,
+          "expected_kwh": 1415.95,
+          "avg_pf": 0.9,
+          "avg_thd": 3.12,
+          "peak_kw": 107.43
+        },
+        {
+          "timestamp": "2026-03-12",
+          "actual_kwh": 1454.58,
+          "expected_kwh": 1430.3,
+          "avg_pf": 0.91,
+          "avg_thd": 2.98,
+          "peak_kw": 102.56
+        },
+        {
+          "timestamp": "2026-03-13",
+          "actual_kwh": 521.03,
+          "expected_kwh": 523.03,
+          "avg_pf": 0.9,
+          "avg_thd": 3.02,
+          "peak_kw": 42.17
+        },
+        {
+          "timestamp": "2026-03-14",
+          "actual_kwh": 1441.53,
+          "expected_kwh": 1422.41,
+          "avg_pf": 0.89,
+          "avg_thd": 2.88,
+          "peak_kw": 101.53
+        },
+        {
+          "timestamp": "2026-03-15",
+          "actual_kwh": 1436.35,
+          "expected_kwh": 1428.51,
+          "avg_pf": 0.9,
+          "avg_thd": 2.82,
+          "peak_kw": 99.7
+        },
+        {
+          "timestamp": "2026-03-16",
+          "actual_kwh": 1450.78,
+          "expected_kwh": 1411.18,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 103.97
+        },
+        {
+          "timestamp": "2026-03-17",
+          "actual_kwh": 1416.69,
+          "expected_kwh": 1405.44,
+          "avg_pf": 0.9,
+          "avg_thd": 3.23,
+          "peak_kw": 96.76
+        },
+        {
+          "timestamp": "2026-03-18",
+          "actual_kwh": 1385.68,
+          "expected_kwh": 1405.1,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 100.32
+        },
+        {
+          "timestamp": "2026-03-19",
+          "actual_kwh": 1444.45,
+          "expected_kwh": 1428.74,
+          "avg_pf": 0.9,
+          "avg_thd": 2.8,
+          "peak_kw": 101.71
+        },
+        {
+          "timestamp": "2026-03-20",
+          "actual_kwh": 523.11,
+          "expected_kwh": 523.51,
+          "avg_pf": 0.9,
+          "avg_thd": 2.93,
+          "peak_kw": 43.12
+        },
+        {
+          "timestamp": "2026-03-21",
+          "actual_kwh": 1411.18,
+          "expected_kwh": 1412.69,
+          "avg_pf": 0.9,
+          "avg_thd": 2.87,
+          "peak_kw": 98.18
+        },
+        {
+          "timestamp": "2026-03-22",
+          "actual_kwh": 1444.21,
+          "expected_kwh": 1432.51,
+          "avg_pf": 0.89,
+          "avg_thd": 3.11,
+          "peak_kw": 99.77
+        },
+        {
+          "timestamp": "2026-03-23",
+          "actual_kwh": 1398.58,
+          "expected_kwh": 1411.81,
+          "avg_pf": 0.9,
+          "avg_thd": 3.04,
+          "peak_kw": 96.89
+        },
+        {
+          "timestamp": "2026-03-24",
+          "actual_kwh": 1396.71,
+          "expected_kwh": 1403.01,
+          "avg_pf": 0.9,
+          "avg_thd": 2.93,
+          "peak_kw": 95.4
+        },
+        {
+          "timestamp": "2026-03-25",
+          "actual_kwh": 1402.8,
+          "expected_kwh": 1412.73,
+          "avg_pf": 0.9,
+          "avg_thd": 2.92,
+          "peak_kw": 101.98
+        },
+        {
+          "timestamp": "2026-03-26",
+          "actual_kwh": 1408.32,
+          "expected_kwh": 1427.04,
+          "avg_pf": 0.9,
+          "avg_thd": 3.02,
+          "peak_kw": 98.71
+        },
+        {
+          "timestamp": "2026-03-27",
+          "actual_kwh": 518.5,
+          "expected_kwh": 518.71,
+          "avg_pf": 0.9,
+          "avg_thd": 2.82,
+          "peak_kw": 43.82
+        },
+        {
+          "timestamp": "2026-03-28",
+          "actual_kwh": 1394.12,
+          "expected_kwh": 1413.9,
+          "avg_pf": 0.9,
+          "avg_thd": 2.85,
+          "peak_kw": 97.28
+        },
+        {
+          "timestamp": "2026-03-29",
+          "actual_kwh": 1434.0,
+          "expected_kwh": 1423.19,
+          "avg_pf": 0.9,
+          "avg_thd": 2.88,
+          "peak_kw": 98.99
+        },
+        {
+          "timestamp": "2026-03-30",
+          "actual_kwh": 1371.86,
+          "expected_kwh": 1401.0,
+          "avg_pf": 0.89,
+          "avg_thd": 2.87,
+          "peak_kw": 96.3
+        },
+        {
+          "timestamp": "2026-03-31",
+          "actual_kwh": 1392.16,
+          "expected_kwh": 1407.36,
+          "avg_pf": 0.9,
+          "avg_thd": 3.11,
+          "peak_kw": 96.01
+        },
+        {
+          "timestamp": "2026-04-01",
+          "actual_kwh": 1470.65,
+          "expected_kwh": 1416.8,
+          "avg_pf": 0.9,
+          "avg_thd": 2.97,
+          "peak_kw": 102.29
+        },
+        {
+          "timestamp": "2026-04-02",
+          "actual_kwh": 1438.83,
+          "expected_kwh": 1429.1,
+          "avg_pf": 0.9,
+          "avg_thd": 2.88,
+          "peak_kw": 100.79
+        },
+        {
+          "timestamp": "2026-04-03",
+          "actual_kwh": 509.94,
+          "expected_kwh": 528.4,
+          "avg_pf": 0.9,
+          "avg_thd": 2.97,
+          "peak_kw": 39.22
+        },
+        {
+          "timestamp": "2026-04-04",
+          "actual_kwh": 1390.08,
+          "expected_kwh": 1422.84,
+          "avg_pf": 0.9,
+          "avg_thd": 3.04,
+          "peak_kw": 99.37
+        },
+        {
+          "timestamp": "2026-04-05",
+          "actual_kwh": 1457.18,
+          "expected_kwh": 1441.1,
+          "avg_pf": 0.9,
+          "avg_thd": 2.88,
+          "peak_kw": 95.81
+        },
+        {
+          "timestamp": "2026-04-06",
+          "actual_kwh": 1377.26,
+          "expected_kwh": 1409.45,
+          "avg_pf": 0.9,
+          "avg_thd": 2.99,
+          "peak_kw": 95.69
+        },
+        {
+          "timestamp": "2026-04-07",
+          "actual_kwh": 1380.11,
+          "expected_kwh": 1408.7,
+          "avg_pf": 0.9,
+          "avg_thd": 2.95,
+          "peak_kw": 102.36
+        },
+        {
+          "timestamp": "2026-04-08",
+          "actual_kwh": 1469.16,
+          "expected_kwh": 1428.42,
+          "avg_pf": 0.91,
+          "avg_thd": 2.9,
+          "peak_kw": 101.29
+        },
+        {
+          "timestamp": "2026-04-09",
+          "actual_kwh": 1411.78,
+          "expected_kwh": 1447.99,
+          "avg_pf": 0.9,
+          "avg_thd": 3.0,
+          "peak_kw": 98.22
+        },
+        {
+          "timestamp": "2026-04-10",
+          "actual_kwh": 496.03,
+          "expected_kwh": 516.06,
+          "avg_pf": 0.9,
+          "avg_thd": 3.24,
+          "peak_kw": 38.13
+        },
+        {
+          "timestamp": "2026-04-11",
+          "actual_kwh": 1462.57,
+          "expected_kwh": 1433.01,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 100.77
+        },
+        {
+          "timestamp": "2026-04-12",
+          "actual_kwh": 1405.66,
+          "expected_kwh": 1433.15,
+          "avg_pf": 0.9,
+          "avg_thd": 3.07,
+          "peak_kw": 96.79
+        },
+        {
+          "timestamp": "2026-04-13",
+          "actual_kwh": 1429.8,
+          "expected_kwh": 1406.98,
+          "avg_pf": 0.91,
+          "avg_thd": 3.14,
+          "peak_kw": 95.84
+        },
+        {
+          "timestamp": "2026-04-14",
+          "actual_kwh": 1447.82,
+          "expected_kwh": 1421.64,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 98.67
+        },
+        {
+          "timestamp": "2026-04-15",
+          "actual_kwh": 1461.24,
+          "expected_kwh": 1427.33,
+          "avg_pf": 0.9,
+          "avg_thd": 3.01,
+          "peak_kw": 99.48
+        },
+        {
+          "timestamp": "2026-04-16",
+          "actual_kwh": 1439.15,
+          "expected_kwh": 1452.22,
+          "avg_pf": 0.9,
+          "avg_thd": 2.99,
+          "peak_kw": 107.48
+        },
+        {
+          "timestamp": "2026-04-17",
+          "actual_kwh": 516.75,
+          "expected_kwh": 505.74,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 41.81
+        },
+        {
+          "timestamp": "2026-04-18",
+          "actual_kwh": 1399.18,
+          "expected_kwh": 1453.02,
+          "avg_pf": 0.9,
+          "avg_thd": 2.76,
+          "peak_kw": 107.49
+        },
+        {
+          "timestamp": "2026-04-19",
+          "actual_kwh": 1446.85,
+          "expected_kwh": 1438.08,
+          "avg_pf": 0.89,
+          "avg_thd": 2.88,
+          "peak_kw": 101.76
+        },
+        {
+          "timestamp": "2026-04-20",
+          "actual_kwh": 1401.07,
+          "expected_kwh": 1435.25,
+          "avg_pf": 0.9,
+          "avg_thd": 2.91,
+          "peak_kw": 111.05
+        },
+        {
+          "timestamp": "2026-04-21",
+          "actual_kwh": 1476.33,
+          "expected_kwh": 1471.26,
+          "avg_pf": 0.91,
+          "avg_thd": 2.93,
+          "peak_kw": 109.99
+        },
+        {
+          "timestamp": "2026-04-22",
+          "actual_kwh": 1476.7,
+          "expected_kwh": 1434.75,
+          "avg_pf": 0.9,
+          "avg_thd": 2.97,
+          "peak_kw": 105.14
+        },
+        {
+          "timestamp": "2026-04-23",
+          "actual_kwh": 1447.51,
+          "expected_kwh": 1464.45,
+          "avg_pf": 0.9,
+          "avg_thd": 3.13,
+          "peak_kw": 108.6
+        },
+        {
+          "timestamp": "2026-04-24",
+          "actual_kwh": 500.88,
+          "expected_kwh": 519.76,
+          "avg_pf": 0.9,
+          "avg_thd": 2.94,
+          "peak_kw": 42.52
+        },
+        {
+          "timestamp": "2026-04-25",
+          "actual_kwh": 1470.71,
+          "expected_kwh": 1444.98,
+          "avg_pf": 0.89,
+          "avg_thd": 2.97,
+          "peak_kw": 106.26
+        },
+        {
+          "timestamp": "2026-04-26",
+          "actual_kwh": 1462.46,
+          "expected_kwh": 1456.78,
+          "avg_pf": 0.9,
+          "avg_thd": 3.12,
+          "peak_kw": 101.48
+        },
+        {
+          "timestamp": "2026-04-27",
+          "actual_kwh": 1525.05,
+          "expected_kwh": 1515.52,
+          "avg_pf": 0.9,
+          "avg_thd": 2.96,
+          "peak_kw": 117.7
+        },
+        {
+          "timestamp": "2026-04-28",
+          "actual_kwh": 1542.62,
+          "expected_kwh": 1513.73,
+          "avg_pf": 0.9,
+          "avg_thd": 2.99,
+          "peak_kw": 110.32
+        },
+        {
+          "timestamp": "2026-04-29",
+          "actual_kwh": 1507.31,
+          "expected_kwh": 1491.16,
+          "avg_pf": 0.9,
+          "avg_thd": 2.91,
+          "peak_kw": 119.3
+        },
+        {
+          "timestamp": "2026-04-30",
+          "actual_kwh": 1618.98,
+          "expected_kwh": 1576.55,
+          "avg_pf": 0.91,
+          "avg_thd": 2.89,
+          "peak_kw": 120.15
+        },
+        {
+          "timestamp": "2026-05-01",
+          "actual_kwh": 597.52,
+          "expected_kwh": 579.6,
+          "avg_pf": 0.9,
+          "avg_thd": 2.89,
+          "peak_kw": 55.3
+        },
+        {
+          "timestamp": "2026-05-02",
+          "actual_kwh": 1567.14,
+          "expected_kwh": 1572.79,
+          "avg_pf": 0.9,
+          "avg_thd": 3.1,
+          "peak_kw": 120.52
+        },
+        {
+          "timestamp": "2026-05-03",
+          "actual_kwh": 1526.36,
+          "expected_kwh": 1546.62,
+          "avg_pf": 0.9,
+          "avg_thd": 2.96,
+          "peak_kw": 124.96
+        },
+        {
+          "timestamp": "2026-05-04",
+          "actual_kwh": 1529.31,
+          "expected_kwh": 1534.8,
+          "avg_pf": 0.91,
+          "avg_thd": 2.97,
+          "peak_kw": 113.5
+        },
+        {
+          "timestamp": "2026-05-05",
+          "actual_kwh": 1488.53,
+          "expected_kwh": 1512.16,
+          "avg_pf": 0.91,
+          "avg_thd": 2.92,
+          "peak_kw": 117.87
+        },
+        {
+          "timestamp": "2026-05-06",
+          "actual_kwh": 1563.45,
+          "expected_kwh": 1569.45,
+          "avg_pf": 0.91,
+          "avg_thd": 3.02,
+          "peak_kw": 125.5
+        },
+        {
+          "timestamp": "2026-05-07",
+          "actual_kwh": 1665.04,
+          "expected_kwh": 1635.81,
+          "avg_pf": 0.9,
+          "avg_thd": 3.04,
+          "peak_kw": 125.28
+        },
+        {
+          "timestamp": "2026-05-08",
+          "actual_kwh": 759.67,
+          "expected_kwh": 776.09,
+          "avg_pf": 0.9,
+          "avg_thd": 3.08,
+          "peak_kw": 71.06
+        },
+        {
+          "timestamp": "2026-05-09",
+          "actual_kwh": 1673.39,
+          "expected_kwh": 1651.07,
+          "avg_pf": 0.89,
+          "avg_thd": 2.93,
+          "peak_kw": 125.71
+        },
+        {
+          "timestamp": "2026-05-10",
+          "actual_kwh": 1617.32,
+          "expected_kwh": 1657.08,
+          "avg_pf": 0.9,
+          "avg_thd": 3.04,
+          "peak_kw": 130.48
+        },
+        {
+          "timestamp": "2026-05-11",
+          "actual_kwh": 1676.25,
+          "expected_kwh": 1670.71,
+          "avg_pf": 0.9,
+          "avg_thd": 2.81,
+          "peak_kw": 124.33
+        },
+        {
+          "timestamp": "2026-05-12",
+          "actual_kwh": 1693.56,
+          "expected_kwh": 1694.96,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 128.41
+        },
+        {
+          "timestamp": "2026-05-13",
+          "actual_kwh": 1766.45,
+          "expected_kwh": 1745.86,
+          "avg_pf": 0.9,
+          "avg_thd": 2.98,
+          "peak_kw": 131.36
+        },
+        {
+          "timestamp": "2026-05-14",
+          "actual_kwh": 1654.92,
+          "expected_kwh": 1674.35,
+          "avg_pf": 0.9,
+          "avg_thd": 2.84,
+          "peak_kw": 131.7
+        },
+        {
+          "timestamp": "2026-05-15",
+          "actual_kwh": 770.51,
+          "expected_kwh": 777.51,
+          "avg_pf": 0.91,
+          "avg_thd": 3.07,
+          "peak_kw": 73.53
+        },
+        {
+          "timestamp": "2026-05-16",
+          "actual_kwh": 1719.36,
+          "expected_kwh": 1732.29,
+          "avg_pf": 0.9,
+          "avg_thd": 3.16,
+          "peak_kw": 119.94
+        },
+        {
+          "timestamp": "2026-05-17",
+          "actual_kwh": 1827.42,
+          "expected_kwh": 1798.55,
+          "avg_pf": 0.9,
+          "avg_thd": 3.08,
+          "peak_kw": 130.9
+        },
+        {
+          "timestamp": "2026-05-18",
+          "actual_kwh": 1753.66,
+          "expected_kwh": 1778.16,
+          "avg_pf": 0.9,
+          "avg_thd": 2.94,
+          "peak_kw": 142.78
+        },
+        {
+          "timestamp": "2026-05-19",
+          "actual_kwh": 1761.83,
+          "expected_kwh": 1768.68,
+          "avg_pf": 0.9,
+          "avg_thd": 2.87,
+          "peak_kw": 146.77
+        },
+        {
+          "timestamp": "2026-05-20",
+          "actual_kwh": 1829.44,
+          "expected_kwh": 1868.48,
+          "avg_pf": 0.9,
+          "avg_thd": 3.02,
+          "peak_kw": 145.7
+        },
+        {
+          "timestamp": "2026-05-21",
+          "actual_kwh": 1856.94,
+          "expected_kwh": 1907.93,
+          "avg_pf": 0.9,
+          "avg_thd": 3.07,
+          "peak_kw": 151.45
+        },
+        {
+          "timestamp": "2026-05-22",
+          "actual_kwh": 968.06,
+          "expected_kwh": 980.84,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 73.19
+        },
+        {
+          "timestamp": "2026-05-23",
+          "actual_kwh": 1859.12,
+          "expected_kwh": 1821.75,
+          "avg_pf": 0.9,
+          "avg_thd": 3.12,
+          "peak_kw": 135.18
+        },
+        {
+          "timestamp": "2026-05-24",
+          "actual_kwh": 1943.75,
+          "expected_kwh": 1959.79,
+          "avg_pf": 0.9,
+          "avg_thd": 2.99,
+          "peak_kw": 161.58
+        },
+        {
+          "timestamp": "2026-05-25",
+          "actual_kwh": 1914.06,
+          "expected_kwh": 1884.87,
+          "avg_pf": 0.9,
+          "avg_thd": 3.09,
+          "peak_kw": 136.84
+        },
+        {
+          "timestamp": "2026-05-26",
+          "actual_kwh": 1859.49,
+          "expected_kwh": 1876.8,
+          "avg_pf": 0.9,
+          "avg_thd": 3.01,
+          "peak_kw": 138.68
+        },
+        {
+          "timestamp": "2026-05-27",
+          "actual_kwh": 1950.84,
+          "expected_kwh": 1953.35,
+          "avg_pf": 0.9,
+          "avg_thd": 2.72,
+          "peak_kw": 143.62
+        },
+        {
+          "timestamp": "2026-05-28",
+          "actual_kwh": 2082.26,
+          "expected_kwh": 2046.49,
+          "avg_pf": 0.91,
+          "avg_thd": 3.14,
+          "peak_kw": 160.37
+        },
+        {
+          "timestamp": "2026-05-29",
+          "actual_kwh": 1048.39,
+          "expected_kwh": 1064.94,
+          "avg_pf": 0.9,
+          "avg_thd": 2.91,
+          "peak_kw": 93.72
+        },
+        {
+          "timestamp": "2026-05-30",
+          "actual_kwh": 2039.66,
+          "expected_kwh": 2049.08,
+          "avg_pf": 0.91,
+          "avg_thd": 3.0,
+          "peak_kw": 157.49
+        },
+        {
+          "timestamp": "2026-05-31",
+          "actual_kwh": 2019.48,
+          "expected_kwh": 2026.68,
+          "avg_pf": 0.9,
+          "avg_thd": 2.84,
+          "peak_kw": 148.96
+        },
+        {
+          "timestamp": "2026-06-01",
+          "actual_kwh": 2063.33,
+          "expected_kwh": 2049.66,
+          "avg_pf": 0.9,
+          "avg_thd": 3.01,
+          "peak_kw": 153.16
+        },
+        {
+          "timestamp": "2026-06-02",
+          "actual_kwh": 2016.11,
+          "expected_kwh": 2050.29,
+          "avg_pf": 0.9,
+          "avg_thd": 3.01,
+          "peak_kw": 154.38
+        },
+        {
+          "timestamp": "2026-06-03",
+          "actual_kwh": 2000.02,
+          "expected_kwh": 2041.1,
+          "avg_pf": 0.9,
+          "avg_thd": 3.01,
+          "peak_kw": 151.37
+        },
+        {
+          "timestamp": "2026-06-04",
+          "actual_kwh": 2171.79,
+          "expected_kwh": 2134.07,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 157.77
+        },
+        {
+          "timestamp": "2026-06-05",
+          "actual_kwh": 1295.31,
+          "expected_kwh": 1263.42,
+          "avg_pf": 0.9,
+          "avg_thd": 3.01,
+          "peak_kw": 96.73
+        },
+        {
+          "timestamp": "2026-06-06",
+          "actual_kwh": 2144.48,
+          "expected_kwh": 2122.25,
+          "avg_pf": 0.9,
+          "avg_thd": 3.13,
+          "peak_kw": 156.74
+        },
+        {
+          "timestamp": "2026-06-07",
+          "actual_kwh": 2096.88,
+          "expected_kwh": 2072.78,
+          "avg_pf": 0.9,
+          "avg_thd": 3.08,
+          "peak_kw": 163.95
+        },
+        {
+          "timestamp": "2026-06-08",
+          "actual_kwh": 1988.37,
+          "expected_kwh": 2017.76,
+          "avg_pf": 0.9,
+          "avg_thd": 3.23,
+          "peak_kw": 153.87
+        },
+        {
+          "timestamp": "2026-06-09",
+          "actual_kwh": 2135.29,
+          "expected_kwh": 2187.44,
+          "avg_pf": 0.9,
+          "avg_thd": 3.12,
+          "peak_kw": 166.34
+        },
+        {
+          "timestamp": "2026-06-10",
+          "actual_kwh": 2203.03,
+          "expected_kwh": 2178.63,
+          "avg_pf": 0.9,
+          "avg_thd": 3.08,
+          "peak_kw": 161.09
+        },
+        {
+          "timestamp": "2026-06-11",
+          "actual_kwh": 2167.44,
+          "expected_kwh": 2220.18,
+          "avg_pf": 0.73,
+          "avg_thd": 3.16,
+          "peak_kw": 150.78
+        },
+        {
+          "timestamp": "2026-06-12",
+          "actual_kwh": 1290.6,
+          "expected_kwh": 1285.14,
+          "avg_pf": 0.9,
+          "avg_thd": 2.81,
+          "peak_kw": 108.51
+        },
+        {
+          "timestamp": "2026-06-13",
+          "actual_kwh": 2247.05,
+          "expected_kwh": 2220.28,
+          "avg_pf": 0.9,
+          "avg_thd": 2.96,
+          "peak_kw": 189.26
+        },
+        {
+          "timestamp": "2026-06-14",
+          "actual_kwh": 2240.95,
+          "expected_kwh": 2213.06,
+          "avg_pf": 0.9,
+          "avg_thd": 3.01,
+          "peak_kw": 174.65
+        },
+        {
+          "timestamp": "2026-06-15",
+          "actual_kwh": 2202.6,
+          "expected_kwh": 2207.3,
+          "avg_pf": 0.9,
+          "avg_thd": 2.8,
+          "peak_kw": 163.66
+        },
+        {
+          "timestamp": "2026-06-16",
+          "actual_kwh": 2362.21,
+          "expected_kwh": 2317.15,
+          "avg_pf": 0.9,
+          "avg_thd": 3.05,
+          "peak_kw": 173.61
+        },
+        {
+          "timestamp": "2026-06-17",
+          "actual_kwh": 2145.98,
+          "expected_kwh": 2168.49,
+          "avg_pf": 0.9,
+          "avg_thd": 2.81,
+          "peak_kw": 159.01
+        },
+        {
+          "timestamp": "2026-06-18",
+          "actual_kwh": 2357.83,
+          "expected_kwh": 2352.61,
+          "avg_pf": 0.9,
+          "avg_thd": 3.04,
+          "peak_kw": 172.72
+        },
+        {
+          "timestamp": "2026-06-19",
+          "actual_kwh": 1339.81,
+          "expected_kwh": 1372.06,
+          "avg_pf": 0.9,
+          "avg_thd": 2.94,
+          "peak_kw": 111.21
+        },
+        {
+          "timestamp": "2026-06-20",
+          "actual_kwh": 2221.12,
+          "expected_kwh": 2232.79,
+          "avg_pf": 0.89,
+          "avg_thd": 2.88,
+          "peak_kw": 160.26
+        },
+        {
+          "timestamp": "2026-06-21",
+          "actual_kwh": 2389.86,
+          "expected_kwh": 2398.01,
+          "avg_pf": 0.9,
+          "avg_thd": 2.94,
+          "peak_kw": 177.1
+        },
+        {
+          "timestamp": "2026-06-22",
+          "actual_kwh": 2381.01,
+          "expected_kwh": 2407.32,
+          "avg_pf": 0.9,
+          "avg_thd": 2.72,
+          "peak_kw": 172.86
+        },
+        {
+          "timestamp": "2026-06-23",
+          "actual_kwh": 2305.84,
+          "expected_kwh": 2287.12,
+          "avg_pf": 0.9,
+          "avg_thd": 2.95,
+          "peak_kw": 171.85
+        },
+        {
+          "timestamp": "2026-06-24",
+          "actual_kwh": 2267.54,
+          "expected_kwh": 2249.56,
+          "avg_pf": 0.9,
+          "avg_thd": 2.88,
+          "peak_kw": 166.65
+        },
+        {
+          "timestamp": "2026-06-25",
+          "actual_kwh": 2276.4,
+          "expected_kwh": 2261.57,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 189.71
+        },
+        {
+          "timestamp": "2026-06-26",
+          "actual_kwh": 1418.7,
+          "expected_kwh": 1439.87,
+          "avg_pf": 0.9,
+          "avg_thd": 2.79,
+          "peak_kw": 116.24
+        },
+        {
+          "timestamp": "2026-06-27",
+          "actual_kwh": 2321.68,
+          "expected_kwh": 2283.4,
+          "avg_pf": 0.91,
+          "avg_thd": 3.11,
+          "peak_kw": 170.81
+        },
+        {
+          "timestamp": "2026-06-28",
+          "actual_kwh": 2207.33,
+          "expected_kwh": 2244.98,
+          "avg_pf": 0.9,
+          "avg_thd": 3.14,
+          "peak_kw": 167.64
+        },
+        {
+          "timestamp": "2026-06-29",
+          "actual_kwh": 2353.26,
+          "expected_kwh": 2337.53,
+          "avg_pf": 0.9,
+          "avg_thd": 3.22,
+          "peak_kw": 196.32
+        },
+        {
+          "timestamp": "2026-06-30",
+          "actual_kwh": 2416.15,
+          "expected_kwh": 2414.02,
+          "avg_pf": 0.9,
+          "avg_thd": 3.06,
+          "peak_kw": 185.3
+        },
+        {
+          "timestamp": "2026-07-01",
+          "actual_kwh": 2291.44,
+          "expected_kwh": 2291.55,
+          "avg_pf": 0.9,
+          "avg_thd": 3.19,
+          "peak_kw": 171.73
+        },
+        {
+          "timestamp": "2026-07-02",
+          "actual_kwh": 2262.25,
+          "expected_kwh": 2287.07,
+          "avg_pf": 0.9,
+          "avg_thd": 2.87,
+          "peak_kw": 165.48
+        },
+        {
+          "timestamp": "2026-07-03",
+          "actual_kwh": 1483.46,
+          "expected_kwh": 1458.14,
+          "avg_pf": 0.89,
+          "avg_thd": 2.92,
+          "peak_kw": 132.31
+        },
+        {
+          "timestamp": "2026-07-04",
+          "actual_kwh": 2309.64,
+          "expected_kwh": 2304.87,
+          "avg_pf": 0.9,
+          "avg_thd": 2.86,
+          "peak_kw": 165.06
+        },
+        {
+          "timestamp": "2026-07-05",
+          "actual_kwh": 2327.89,
+          "expected_kwh": 2329.3,
+          "avg_pf": 0.9,
+          "avg_thd": 2.98,
+          "peak_kw": 164.89
+        },
+        {
+          "timestamp": "2026-07-06",
+          "actual_kwh": 2360.05,
+          "expected_kwh": 2343.13,
+          "avg_pf": 0.89,
+          "avg_thd": 3.07,
+          "peak_kw": 175.12
+        },
+        {
+          "timestamp": "2026-07-07",
+          "actual_kwh": 2305.63,
+          "expected_kwh": 2323.34,
+          "avg_pf": 0.89,
+          "avg_thd": 2.96,
+          "peak_kw": 163.03
+        },
+        {
+          "timestamp": "2026-07-08",
+          "actual_kwh": 2338.37,
+          "expected_kwh": 2330.12,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 157.92
+        },
+        {
+          "timestamp": "2026-07-09",
+          "actual_kwh": 2400.97,
+          "expected_kwh": 2365.17,
+          "avg_pf": 0.9,
+          "avg_thd": 2.92,
+          "peak_kw": 170.06
+        },
+        {
+          "timestamp": "2026-07-10",
+          "actual_kwh": 1321.92,
+          "expected_kwh": 1336.47,
+          "avg_pf": 0.9,
+          "avg_thd": 2.87,
+          "peak_kw": 100.55
+        },
+        {
+          "timestamp": "2026-07-11",
+          "actual_kwh": 2331.69,
+          "expected_kwh": 2368.99,
+          "avg_pf": 0.89,
+          "avg_thd": 3.08,
+          "peak_kw": 166.57
+        },
+        {
+          "timestamp": "2026-07-12",
+          "actual_kwh": 2440.08,
+          "expected_kwh": 2406.5,
+          "avg_pf": 0.9,
+          "avg_thd": 2.91,
+          "peak_kw": 176.78
+        },
+        {
+          "timestamp": "2026-07-13",
+          "actual_kwh": 2347.58,
+          "expected_kwh": 2343.78,
+          "avg_pf": 0.9,
+          "avg_thd": 3.11,
+          "peak_kw": 181.19
+        },
+        {
+          "timestamp": "2026-07-14",
+          "actual_kwh": 2405.55,
+          "expected_kwh": 2400.57,
+          "avg_pf": 0.9,
+          "avg_thd": 3.2,
+          "peak_kw": 169.57
+        },
+        {
+          "timestamp": "2026-07-15",
+          "actual_kwh": 2337.04,
+          "expected_kwh": 2351.66,
+          "avg_pf": 0.9,
+          "avg_thd": 2.88,
+          "peak_kw": 170.99
+        },
+        {
+          "timestamp": "2026-07-16",
+          "actual_kwh": 2438.65,
+          "expected_kwh": 2410.8,
+          "avg_pf": 0.9,
+          "avg_thd": 3.03,
+          "peak_kw": 182.63
+        },
+        {
+          "timestamp": "2026-07-17",
+          "actual_kwh": 1445.98,
+          "expected_kwh": 1450.23,
+          "avg_pf": 0.9,
+          "avg_thd": 3.07,
+          "peak_kw": 110.92
+        },
+        {
+          "timestamp": "2026-07-18",
+          "actual_kwh": 2323.82,
+          "expected_kwh": 2353.87,
+          "avg_pf": 0.9,
+          "avg_thd": 2.85,
+          "peak_kw": 171.69
+        },
+        {
+          "timestamp": "2026-07-19",
+          "actual_kwh": 2308.47,
+          "expected_kwh": 2329.02,
+          "avg_pf": 0.9,
+          "avg_thd": 2.84,
+          "peak_kw": 179.94
+        },
+        {
+          "timestamp": "2026-07-20",
+          "actual_kwh": 2357.58,
+          "expected_kwh": 2416.17,
+          "avg_pf": 0.9,
+          "avg_thd": 3.07,
+          "peak_kw": 179.06
+        },
+        {
+          "timestamp": "2026-07-21",
+          "actual_kwh": 2387.8,
+          "expected_kwh": 2367.77,
+          "avg_pf": 0.89,
+          "avg_thd": 2.97,
+          "peak_kw": 170.04
+        },
+        {
+          "timestamp": "2026-07-22",
+          "actual_kwh": 2311.32,
+          "expected_kwh": 2284.66,
+          "avg_pf": 0.9,
+          "avg_thd": 3.01,
+          "peak_kw": 167.21
+        },
+        {
+          "timestamp": "2026-07-23",
+          "actual_kwh": 2264.92,
+          "expected_kwh": 2285.92,
+          "avg_pf": 0.9,
+          "avg_thd": 2.99,
+          "peak_kw": 154.32
+        },
+        {
+          "timestamp": "2026-07-24",
+          "actual_kwh": 1440.87,
+          "expected_kwh": 1418.16,
+          "avg_pf": 0.9,
+          "avg_thd": 3.01,
+          "peak_kw": 114.88
+        },
+        {
+          "timestamp": "2026-07-25",
+          "actual_kwh": 2274.58,
+          "expected_kwh": 2268.73,
+          "avg_pf": 0.9,
+          "avg_thd": 2.78,
+          "peak_kw": 166.29
+        },
+        {
+          "timestamp": "2026-07-26",
+          "actual_kwh": 2370.42,
+          "expected_kwh": 2348.36,
+          "avg_pf": 0.9,
+          "avg_thd": 2.92,
+          "peak_kw": 172.42
+        },
+        {
+          "timestamp": "2026-07-27",
+          "actual_kwh": 2354.64,
+          "expected_kwh": 2343.96,
+          "avg_pf": 0.9,
+          "avg_thd": 2.9,
+          "peak_kw": 168.2
+        },
+        {
+          "timestamp": "2026-07-28",
+          "actual_kwh": 2372.53,
+          "expected_kwh": 2345.94,
+          "avg_pf": 0.9,
+          "avg_thd": 2.91,
+          "peak_kw": 187.87
+        },
+        {
+          "timestamp": "2026-07-29",
+          "actual_kwh": 2287.9,
+          "expected_kwh": 2288.3,
+          "avg_pf": 0.9,
+          "avg_thd": 3.04,
+          "peak_kw": 162.92
+        },
+        {
+          "timestamp": "2026-07-30",
+          "actual_kwh": 2260.52,
+          "expected_kwh": 2254.51,
+          "avg_pf": 0.9,
+          "avg_thd": 2.96,
+          "peak_kw": 156.93
+        },
+        {
+          "timestamp": "2026-07-31",
+          "actual_kwh": 1392.69,
+          "expected_kwh": 1405.04,
+          "avg_pf": 0.9,
+          "avg_thd": 3.16,
+          "peak_kw": 115.6
+        },
+        {
+          "timestamp": "2026-08-01",
+          "actual_kwh": 2343.68,
+          "expected_kwh": 2356.59,
+          "avg_pf": 0.9,
+          "avg_thd": 3.12,
+          "peak_kw": 175.99
+        },
+        {
+          "timestamp": "2026-08-02",
+          "actual_kwh": 2258.12,
+          "expected_kwh": 2267.94,
+          "avg_pf": 0.9,
+          "avg_thd": 2.87,
+          "peak_kw": 192.28
+        },
+        {
+          "timestamp": "2026-08-03",
+          "actual_kwh": 2168.18,
+          "expected_kwh": 2146.63,
+          "avg_pf": 0.9,
+          "avg_thd": 2.92,
+          "peak_kw": 152.71
+        },
+        {
+          "timestamp": "2026-08-04",
+          "actual_kwh": 2243.62,
+          "expected_kwh": 2234.45,
+          "avg_pf": 0.91,
+          "avg_thd": 2.93,
+          "peak_kw": 161.4
+        },
+        {
+          "timestamp": "2026-08-05",
+          "actual_kwh": 2113.99,
+          "expected_kwh": 2113.48,
+          "avg_pf": 0.9,
+          "avg_thd": 2.88,
+          "peak_kw": 157.39
+        },
+        {
+          "timestamp": "2026-08-06",
+          "actual_kwh": 2065.49,
+          "expected_kwh": 2097.31,
+          "avg_pf": 0.9,
+          "avg_thd": 2.91,
+          "peak_kw": 152.86
+        },
+        {
+          "timestamp": "2026-08-07",
+          "actual_kwh": 1292.62,
+          "expected_kwh": 1270.88,
+          "avg_pf": 0.9,
+          "avg_thd": 3.02,
+          "peak_kw": 100.53
+        },
+        {
+          "timestamp": "2026-08-08",
+          "actual_kwh": 2104.22,
+          "expected_kwh": 2117.73,
+          "avg_pf": 0.9,
+          "avg_thd": 2.99,
+          "peak_kw": 147.47
+        },
+        {
+          "timestamp": "2026-08-09",
+          "actual_kwh": 2068.5,
+          "expected_kwh": 2092.68,
+          "avg_pf": 0.9,
+          "avg_thd": 2.96,
+          "peak_kw": 155.76
+        },
+        {
+          "timestamp": "2026-08-10",
+          "actual_kwh": 2156.05,
+          "expected_kwh": 2203.24,
+          "avg_pf": 0.9,
+          "avg_thd": 3.04,
+          "peak_kw": 156.71
+        },
+        {
+          "timestamp": "2026-08-11",
+          "actual_kwh": 2161.29,
+          "expected_kwh": 2195.86,
+          "avg_pf": 0.9,
+          "avg_thd": 3.05,
+          "peak_kw": 162.81
+        },
+        {
+          "timestamp": "2026-08-12",
+          "actual_kwh": 2154.26,
+          "expected_kwh": 2159.27,
+          "avg_pf": 0.9,
+          "avg_thd": 3.27,
+          "peak_kw": 164.18
+        },
+        {
+          "timestamp": "2026-08-13",
+          "actual_kwh": 2212.74,
+          "expected_kwh": 2208.1,
+          "avg_pf": 0.9,
+          "avg_thd": 2.99,
+          "peak_kw": 157.59
+        },
+        {
+          "timestamp": "2026-08-14",
+          "actual_kwh": 1092.7,
+          "expected_kwh": 1108.05,
+          "avg_pf": 0.9,
+          "avg_thd": 3.06,
+          "peak_kw": 94.24
+        },
+        {
+          "timestamp": "2026-08-15",
+          "actual_kwh": 2076.31,
+          "expected_kwh": 2096.59,
+          "avg_pf": 0.9,
+          "avg_thd": 3.04,
+          "peak_kw": 162.74
+        },
+        {
+          "timestamp": "2026-08-16",
+          "actual_kwh": 2112.93,
+          "expected_kwh": 2110.56,
+          "avg_pf": 0.9,
+          "avg_thd": 2.93,
+          "peak_kw": 166.26
+        },
+        {
+          "timestamp": "2026-08-17",
+          "actual_kwh": 1970.53,
+          "expected_kwh": 2000.78,
+          "avg_pf": 0.9,
+          "avg_thd": 3.07,
+          "peak_kw": 136.94
+        },
+        {
+          "timestamp": "2026-08-18",
+          "actual_kwh": 2074.14,
+          "expected_kwh": 2061.63,
+          "avg_pf": 0.9,
+          "avg_thd": 3.0,
+          "peak_kw": 149.03
+        },
+        {
+          "timestamp": "2026-08-19",
+          "actual_kwh": 2019.76,
+          "expected_kwh": 2024.71,
+          "avg_pf": 0.91,
+          "avg_thd": 2.94,
+          "peak_kw": 145.24
+        },
+        {
+          "timestamp": "2026-08-20",
+          "actual_kwh": 2041.33,
+          "expected_kwh": 2029.07,
+          "avg_pf": 0.9,
+          "avg_thd": 3.08,
+          "peak_kw": 169.85
+        },
+        {
+          "timestamp": "2026-08-21",
+          "actual_kwh": 995.9,
+          "expected_kwh": 1030.61,
+          "avg_pf": 0.9,
+          "avg_thd": 3.04,
+          "peak_kw": 80.22
+        },
+        {
+          "timestamp": "2026-08-22",
+          "actual_kwh": 1951.52,
+          "expected_kwh": 1962.96,
+          "avg_pf": 0.9,
+          "avg_thd": 2.86,
+          "peak_kw": 159.12
+        },
+        {
+          "timestamp": "2026-08-23",
+          "actual_kwh": 1965.35,
+          "expected_kwh": 1895.34,
+          "avg_pf": 0.91,
+          "avg_thd": 2.96,
+          "peak_kw": 156.09
+        },
+        {
+          "timestamp": "2026-08-24",
+          "actual_kwh": 1973.56,
+          "expected_kwh": 1936.4,
+          "avg_pf": 0.9,
+          "avg_thd": 3.09,
+          "peak_kw": 143.23
+        },
+        {
+          "timestamp": "2026-08-25",
+          "actual_kwh": 1913.75,
+          "expected_kwh": 1919.66,
+          "avg_pf": 0.89,
+          "avg_thd": 3.0,
+          "peak_kw": 147.43
+        },
+        {
+          "timestamp": "2026-08-26",
+          "actual_kwh": 1938.21,
+          "expected_kwh": 1935.68,
+          "avg_pf": 0.9,
+          "avg_thd": 2.71,
+          "peak_kw": 157.04
+        },
+        {
+          "timestamp": "2026-08-27",
+          "actual_kwh": 1854.25,
+          "expected_kwh": 1842.68,
+          "avg_pf": 0.9,
+          "avg_thd": 2.9,
+          "peak_kw": 141.88
+        }
+      ],
+      "hourly_profile_sample": [
+        {
+          "hour": 0,
+          "active_power_kw": 19.34,
+          "expected_power_kw": 17.86,
+          "power_factor": 0.9,
+          "thd_percent": 3.2
+        },
+        {
+          "hour": 1,
+          "active_power_kw": 26.6,
+          "expected_power_kw": 19.01,
+          "power_factor": 0.91,
+          "thd_percent": 2.01
+        },
+        {
+          "hour": 2,
+          "active_power_kw": 18.55,
+          "expected_power_kw": 17.45,
+          "power_factor": 0.9,
+          "thd_percent": 2.68
+        },
+        {
+          "hour": 3,
+          "active_power_kw": 21.48,
+          "expected_power_kw": 19.09,
+          "power_factor": 0.92,
+          "thd_percent": 3.24
+        },
+        {
+          "hour": 4,
+          "active_power_kw": 17.66,
+          "expected_power_kw": 18.6,
+          "power_factor": 0.89,
+          "thd_percent": 2.49
+        },
+        {
+          "hour": 5,
+          "active_power_kw": 16.98,
+          "expected_power_kw": 15.73,
+          "power_factor": 0.87,
+          "thd_percent": 3.2
+        },
+        {
+          "hour": 6,
+          "active_power_kw": 13.32,
+          "expected_power_kw": 18.08,
+          "power_factor": 0.94,
+          "thd_percent": 2.72
+        },
+        {
+          "hour": 7,
+          "active_power_kw": 20.58,
+          "expected_power_kw": 17.39,
+          "power_factor": 0.89,
+          "thd_percent": 2.98
+        },
+        {
+          "hour": 8,
+          "active_power_kw": 84.89,
+          "expected_power_kw": 89.64,
+          "power_factor": 0.89,
+          "thd_percent": 3.3
+        },
+        {
+          "hour": 9,
+          "active_power_kw": 93.99,
+          "expected_power_kw": 90.09,
+          "power_factor": 0.9,
+          "thd_percent": 3.48
+        },
+        {
+          "hour": 10,
+          "active_power_kw": 96.51,
+          "expected_power_kw": 89.73,
+          "power_factor": 0.9,
+          "thd_percent": 3.05
+        },
+        {
+          "hour": 11,
+          "active_power_kw": 92.2,
+          "expected_power_kw": 89.65,
+          "power_factor": 0.89,
+          "thd_percent": 2.59
+        },
+        {
+          "hour": 12,
+          "active_power_kw": 88.28,
+          "expected_power_kw": 89.69,
+          "power_factor": 0.9,
+          "thd_percent": 2.77
+        },
+        {
+          "hour": 13,
+          "active_power_kw": 92.72,
+          "expected_power_kw": 90.04,
+          "power_factor": 0.9,
+          "thd_percent": 3.32
+        },
+        {
+          "hour": 14,
+          "active_power_kw": 88.15,
+          "expected_power_kw": 89.68,
+          "power_factor": 0.9,
+          "thd_percent": 2.49
+        },
+        {
+          "hour": 15,
+          "active_power_kw": 95.61,
+          "expected_power_kw": 89.83,
+          "power_factor": 0.85,
+          "thd_percent": 2.91
+        },
+        {
+          "hour": 16,
+          "active_power_kw": 79.01,
+          "expected_power_kw": 90.27,
+          "power_factor": 0.94,
+          "thd_percent": 2.81
+        },
+        {
+          "hour": 17,
+          "active_power_kw": 87.99,
+          "expected_power_kw": 90.07,
+          "power_factor": 0.9,
+          "thd_percent": 2.95
+        },
+        {
+          "hour": 18,
+          "active_power_kw": 78.06,
+          "expected_power_kw": 89.88,
+          "power_factor": 0.91,
+          "thd_percent": 2.5
+        },
+        {
+          "hour": 19,
+          "active_power_kw": 81.03,
+          "expected_power_kw": 89.68,
+          "power_factor": 0.87,
+          "thd_percent": 2.07
+        },
+        {
+          "hour": 20,
+          "active_power_kw": 98.18,
+          "expected_power_kw": 90.31,
+          "power_factor": 0.89,
+          "thd_percent": 3.26
+        },
+        {
+          "hour": 21,
+          "active_power_kw": 50.37,
+          "expected_power_kw": 41.76,
+          "power_factor": 0.89,
+          "thd_percent": 3.48
+        },
+        {
+          "hour": 22,
+          "active_power_kw": 40.68,
+          "expected_power_kw": 44.88,
+          "power_factor": 0.93,
+          "thd_percent": 2.1
+        },
+        {
+          "hour": 23,
+          "active_power_kw": 8.98,
+          "expected_power_kw": 14.26,
+          "power_factor": 0.89,
+          "thd_percent": 3.18
+        }
+      ],
+      "anomalies": [
+        {
+          "timestamp": "2026-06-11T17:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.706,
+          "voltage_pu": 0.992,
+          "thd_percent": 3.41,
+          "active_power_kw": 144.9
+        },
+        {
+          "timestamp": "2026-06-11T18:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.693,
+          "voltage_pu": 1.002,
+          "thd_percent": 3.31,
+          "active_power_kw": 125.0
+        },
+        {
+          "timestamp": "2026-06-11T09:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.727,
+          "voltage_pu": 0.989,
+          "thd_percent": 3.58,
+          "active_power_kw": 137.2
+        },
+        {
+          "timestamp": "2026-06-11T08:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.713,
+          "voltage_pu": 1.015,
+          "thd_percent": 3.11,
+          "active_power_kw": 136.0
+        },
+        {
+          "timestamp": "2026-06-11T10:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.704,
+          "voltage_pu": 0.997,
+          "thd_percent": 3.92,
+          "active_power_kw": 133.3
+        },
+        {
+          "timestamp": "2026-06-11T15:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.759,
+          "voltage_pu": 1.004,
+          "thd_percent": 3.01,
+          "active_power_kw": 114.5
+        },
+        {
+          "timestamp": "2026-06-11T14:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.705,
+          "voltage_pu": 0.993,
+          "thd_percent": 2.69,
+          "active_power_kw": 143.2
+        },
+        {
+          "timestamp": "2026-06-11T13:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.728,
+          "voltage_pu": 0.99,
+          "thd_percent": 2.93,
+          "active_power_kw": 139.7
+        },
+        {
+          "timestamp": "2026-06-11T12:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.752,
+          "voltage_pu": 1.02,
+          "thd_percent": 3.46,
+          "active_power_kw": 131.1
+        },
+        {
+          "timestamp": "2026-06-11T11:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.76,
+          "voltage_pu": 1.012,
+          "thd_percent": 3.76,
+          "active_power_kw": 132.4
+        },
+        {
+          "timestamp": "2026-06-11T19:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.716,
+          "voltage_pu": 1.015,
+          "thd_percent": 2.94,
+          "active_power_kw": 146.1
+        },
+        {
+          "timestamp": "2026-06-11T20:00:00",
+          "site_id": "site_B",
+          "reasons": [
+            "افت شدید ضریب قدرت"
+          ],
+          "severity": 3,
+          "power_factor": 0.699,
+          "voltage_pu": 0.987,
+          "thd_percent": 3.39,
+          "active_power_kw": 150.8
+        }
+      ],
+      "monthly_bills": [
+        {
+          "year_month": "2026-03",
+          "energy_cost_rial": 667871871.0,
+          "pf_penalty_rial": 3098947.0,
+          "peak_demand_kw": 107.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 40589.0,
+          "demand_charge_rial": 236346887.0,
+          "total_bill_rial": 907317705.0
+        },
+        {
+          "year_month": "2026-04",
+          "energy_cost_rial": 653985606.0,
+          "pf_penalty_rial": 2700781.0,
+          "peak_demand_kw": 120.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 39840.0,
+          "demand_charge_rial": 264326949.0,
+          "total_bill_rial": 921013336.0
+        },
+        {
+          "year_month": "2026-05",
+          "energy_cost_rial": 822136747.0,
+          "pf_penalty_rial": 3339117.0,
+          "peak_demand_kw": 162.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 49983.0,
+          "demand_charge_rial": 355467878.0,
+          "total_bill_rial": 1180943742.0
+        },
+        {
+          "year_month": "2026-06",
+          "energy_cost_rial": 1032077581.0,
+          "pf_penalty_rial": 7940922.0,
+          "peak_demand_kw": 196.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 63028.0,
+          "demand_charge_rial": 431913058.0,
+          "total_bill_rial": 1471931561.0
+        },
+        {
+          "year_month": "2026-07",
+          "energy_cost_rial": 1114935127.0,
+          "pf_penalty_rial": 5617644.0,
+          "peak_demand_kw": 188.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 67856.0,
+          "demand_charge_rial": 413307870.0,
+          "total_bill_rial": 1533860641.0
+        },
+        {
+          "year_month": "2026-08",
+          "energy_cost_rial": 875006190.0,
+          "pf_penalty_rial": 3809872.0,
+          "peak_demand_kw": 192.0,
+          "avg_power_factor": 1.0,
+          "total_kwh": 53323.0,
+          "demand_charge_rial": 423020671.0,
+          "total_bill_rial": 1301836733.0
+        }
+      ],
+      "what_if": {
+        "pf_correction": {
+          "period_savings_rial": 26507284.0,
+          "annualized_savings_rial": 53014568.0,
+          "savings_percent": 0.36
+        },
+        "peak_shift": {
+          "period_savings_rial": 297969606.0,
+          "annualized_savings_rial": 595939213.0,
+          "savings_percent": 4.07
+        },
+        "combined": {
+          "period_savings_rial": 322994268.0,
+          "annualized_savings_rial": 645988535.0,
+          "savings_percent": 4.41
+        },
+        "baseline_annualized_bill_rial": 14633807437.0
+      }
+    }
+  ]
+}

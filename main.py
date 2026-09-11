@@ -134,13 +134,16 @@ async def api_tariff_estimate(
 
 @app.post("/api/pq/preview")
 async def api_pq_preview(file: UploadFile = File(...)):
-    if not file.filename.lower().endswith((".csv", ".xlsx")):
+    if not file.filename.lower().endswith((".csv", ".xlsx", ".xls")):
         raise HTTPException(400, "فقط فایل CSV یا XLSX پذیرفته می‌شود")
-    suffix = ".xlsx" if file.filename.lower().endswith(".xlsx") else ".csv"
+    if file.filename.lower().endswith(".xlsx"):
+        suffix = ".xlsx"
+    elif file.filename.lower().endswith(".xls"):
+        suffix = ".xls"
+    else:
+        suffix = ".csv"
     path = _save_upload(file, suffix)
     try:
-        if suffix == ".xlsx":
-            raise HTTPException(400, "فعلاً فقط CSV پشتیبانی می‌شود؛ اکسل را با Save As به CSV تبدیل کنید")
         df = import_pq_csv(path)
         return {
             "row_count": len(df),
@@ -157,3 +160,45 @@ async def api_pq_preview(file: UploadFile = File(...)):
         raise HTTPException(422, f"خطا در خواندن فایل کیفیت توان: {e}")
     finally:
         os.remove(path)
+
+
+@app.post("/api/bills/batch")
+async def api_bills_batch(files: list[UploadFile] = File(...)):
+    """آپلود هم‌زمان چند قبض PDF (مثلاً ۱۲ ماه گذشته) -> فهرست دوره‌ها،
+    مرتب‌شده بر اساس تاریخ، برای رسم روند مصرف/هزینه در طول زمان.
+    این راه، بدون نیاز به داده لحظه‌ای کنتور هوشمند، یک تاریخچه واقعی از
+    روی خودِ قبض‌ها می‌سازد.
+    """
+    parsed, errors = [], []
+    for f in files:
+        if not f.filename.lower().endswith(".pdf"):
+            errors.append({"filename": f.filename, "error": "فقط فایل PDF پذیرفته می‌شود"})
+            continue
+        path = _save_upload(f, ".pdf")
+        try:
+            bill = parse_bill(path)
+            bill["_source_filename"] = f.filename
+            parsed.append(bill)
+        except Exception as e:
+            errors.append({"filename": f.filename, "error": str(e)})
+        finally:
+            os.remove(path)
+
+    def sort_key(b):
+        d = b.get("issue_date_jalali") or b.get("meter_readings", {}).get("current", {}).get("date_jalali") or ""
+        return d
+
+    parsed.sort(key=sort_key)
+    total_kwh = sum(b.get("total_consumption_kwh") or 0 for b in parsed)
+    total_payable = sum(b.get("amount_payable_rial") or 0 for b in parsed)
+
+    return {
+        "periods_count": len(parsed),
+        "bills": parsed,
+        "errors": errors,
+        "summary": {
+            "total_consumption_kwh": total_kwh,
+            "total_payable_rial": total_payable,
+            "avg_monthly_payable_rial": round(total_payable / len(parsed)) if parsed else None,
+        },
+    }

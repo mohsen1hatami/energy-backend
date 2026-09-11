@@ -84,9 +84,13 @@ def normalize_power_factor(raw_series: pd.Series) -> pd.Series:
 
 def import_pq_csv(csv_path: str, nominal_phase_voltage: float = 230.0) -> pd.DataFrame:
     """می‌خواند و به دیتافریم نرمال‌شده‌ی سازگار با ml_models.py/tariff_engine.py
-    تبدیل می‌کند. اگر فایل ردیف داده نداشته باشد، دیتافریم خالی با ستون‌های
-    درست برمی‌گرداند (برای این‌که بقیه پایپ‌لاین کرش نکند)."""
-    raw = pd.read_csv(csv_path, encoding="utf-8-sig")
+    تبدیل می‌کند. هم CSV و هم اکسل (xlsx/xls) پشتیبانی می‌شود. اگر فایل ردیف
+    داده نداشته باشد، دیتافریم خالی با ستون‌های درست برمی‌گرداند (برای این‌که
+    بقیه پایپ‌لاین کرش نکند)."""
+    if csv_path.lower().endswith((".xlsx", ".xls")):
+        raw = pd.read_excel(csv_path, engine="openpyxl" if csv_path.lower().endswith(".xlsx") else None)
+    else:
+        raw = pd.read_csv(csv_path, encoding="utf-8-sig")
     lookup = build_column_lookup(raw.columns)
 
     out = pd.DataFrame(index=raw.index)

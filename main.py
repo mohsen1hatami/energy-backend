@@ -162,7 +162,67 @@ async def api_pq_preview(file: UploadFile = File(...)):
         os.remove(path)
 
 
-@app.post("/api/bills/batch")
+@app.post("/api/pq/analyze")
+async def api_pq_analyze(file: UploadFile = File(...)):
+    """بر خلاف /api/pq/preview (که فقط ساختار ستون‌ها را نشان می‌دهد)، این
+    اندپوینت آمار واقعی، یک سری زمانی برای نمودار، و پرچم‌های ناهنجاری
+    قطعی (rule-based) را برمی‌گرداند — بدون نیاز به آموزش مدل یادگیری ماشین،
+    چون برای یک فایل تکی معمولاً داده کافی برای آموزش معنادار مدل نیست.
+    """
+    if not file.filename.lower().endswith((".csv", ".xlsx", ".xls")):
+        raise HTTPException(400, "فقط فایل CSV یا XLSX پذیرفته می‌شود")
+    suffix = ".xlsx" if file.filename.lower().endswith(".xlsx") else (
+        ".xls" if file.filename.lower().endswith(".xls") else ".csv"
+    )
+    path = _save_upload(file, suffix)
+    try:
+        df = import_pq_csv(path)
+        if len(df) == 0:
+            raise HTTPException(422, "فایل هیچ ردیف داده‌ای ندارد — فقط هدر دارد")
+        if df["timestamp"].isna().all():
+            raise HTTPException(422, "ستون تاریخ/زمان خوانده نشد؛ ساختار فایل را بررسی کنید")
+
+        df = df.sort_values("timestamp")
+        step = max(1, len(df) // 500)
+        sampled = df.iloc[::step].copy()
+        sampled["timestamp"] = sampled["timestamp"].astype(str)
+        series = sampled[[
+            "timestamp", "active_power_kw", "power_factor", "thd_percent", "voltage_imbalance_percent"
+        ]].fillna(0).to_dict(orient="records")
+
+        summary = {
+            "row_count": int(len(df)),
+            "start": str(df["timestamp"].min()),
+            "end": str(df["timestamp"].max()),
+            "avg_power_factor": round(float(df["power_factor"].mean()), 3) if df["power_factor"].notna().any() else None,
+            "min_power_factor": round(float(df["power_factor"].min()), 3) if df["power_factor"].notna().any() else None,
+            "avg_thd_percent": round(float(df["thd_percent"].mean()), 2) if df["thd_percent"].notna().any() else None,
+            "max_thd_percent": round(float(df["thd_percent"].max()), 2) if df["thd_percent"].notna().any() else None,
+            "avg_voltage_imbalance_percent": round(float(df["voltage_imbalance_percent"].mean()), 2) if df["voltage_imbalance_percent"].notna().any() else None,
+            "peak_active_power_kw": round(float(df["active_power_kw"].max()), 1) if df["active_power_kw"].notna().any() else None,
+            "contract_demand_kw": float(df["contract_demand_kw"].dropna().iloc[0]) if df["contract_demand_kw"].notna().any() else None,
+        }
+
+        flags = []
+        if summary["min_power_factor"] is not None and summary["min_power_factor"] < 0.85:
+            n = int((df["power_factor"] < 0.85).sum())
+            flags.append({"type": "افت ضریب قدرت", "count": n, "detail": f"{n} بازه با PF زیر ۰٫۸۵ (کمینه {summary['min_power_factor']})"})
+        if summary["max_thd_percent"] is not None and summary["max_thd_percent"] > 8:
+            n = int((df["thd_percent"] > 8).sum())
+            flags.append({"type": "اعوجاج هارمونیکی بالا", "count": n, "detail": f"{n} بازه با THD بالای ۸٪ (بیشینه {summary['max_thd_percent']}٪)"})
+        if summary["avg_voltage_imbalance_percent"] is not None and df["voltage_imbalance_percent"].max() > 3:
+            n = int((df["voltage_imbalance_percent"] > 3).sum())
+            flags.append({"type": "عدم تعادل فاز", "count": n, "detail": f"{n} بازه با عدم تعادل ولتاژ بالای ۳٪"})
+        if summary["contract_demand_kw"] and summary["peak_active_power_kw"] and summary["peak_active_power_kw"] > summary["contract_demand_kw"]:
+            flags.append({"type": "عبور از دیماند قراردادی", "count": None, "detail": f"اوج مصرف {summary['peak_active_power_kw']} kW بیشتر از قدرت قراردادی {summary['contract_demand_kw']} kW"})
+
+        return {"summary": summary, "series": series, "flags": flags}
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(422, f"خطا در تحلیل فایل کیفیت توان: {e}")
+    finally:
+        os.remove(path)
 async def api_bills_batch(files: list[UploadFile] = File(...)):
     """آپلود هم‌زمان چند قبض PDF (مثلاً ۱۲ ماه گذشته) -> فهرست دوره‌ها،
     مرتب‌شده بر اساس تاریخ، برای رسم روند مصرف/هزینه در طول زمان.

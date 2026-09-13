@@ -82,6 +82,22 @@ def normalize_power_factor(raw_series: pd.Series) -> pd.Series:
     return s
 
 
+def _parse_timestamp_column(raw_col: pd.Series) -> pd.Series:
+    """تبدیل ستون تاریخ/زمان به datetime.
+
+    نکته مهم: وقتی اکسل ذخیره می‌شود، اگر سلول‌ها به‌صورت «تاریخ» فرمت نشده
+    باشند، openpyxl عدد سریال اکسل (روزهای سپری‌شده از ۳۰ دسامبر ۱۸۹۹) را
+    به‌صورت float خام برمی‌گرداند (مثلاً 45937.98) — نه یک datetime واقعی.
+    اگر این حالت را با pd.to_datetime معمولی پردازش کنیم، به‌اشتباه به‌عنوان
+    ثانیه/نانوثانیه از ۱۹۷۰ تفسیر می‌شود و تاریخ‌ها ۱۹۷۰ نمایش داده می‌شوند.
+    این تابع هر دو حالت (رشته تاریخ معمولی، یا عدد سریال اکسل) را تشخیص
+    می‌دهد.
+    """
+    if pd.api.types.is_numeric_dtype(raw_col):
+        return pd.to_datetime(raw_col, unit="D", origin="1899-12-30", errors="coerce")
+    return pd.to_datetime(raw_col, errors="coerce")
+
+
 def import_pq_csv(csv_path: str, nominal_phase_voltage: float = 230.0) -> pd.DataFrame:
     """می‌خواند و به دیتافریم نرمال‌شده‌ی سازگار با ml_models.py/tariff_engine.py
     تبدیل می‌کند. هم CSV و هم اکسل (xlsx/xls) پشتیبانی می‌شود. اگر فایل ردیف
@@ -101,7 +117,7 @@ def import_pq_csv(csv_path: str, nominal_phase_voltage: float = 230.0) -> pd.Dat
     if len(raw) == 0:
         out["timestamp"] = pd.Series(dtype="datetime64[ns]")
     else:
-        out["timestamp"] = pd.to_datetime(out["timestamp_gregorian"], errors="coerce")
+        out["timestamp"] = _parse_timestamp_column(out["timestamp_gregorian"])
 
     out["active_power_kw"] = pd.to_numeric(out["active_power_import_kw"], errors="coerce")
 
